@@ -1,0 +1,20 @@
+// KIET custom variables
+$kiet-bg-primary: #085290;
+$kiet-bg-secondary: #f15b20;
+$kiet-bg-tertiary: #164265;
+
+$kiet-text-primary: #085290;
+$kiet-text-secondary: #f15b20;
+$kiet-text-tertiary: #164265;
+
+/* Custom utility classes based on the guidelines */
+.kiet-bg-primary { background-color: $kiet-bg-primary !important; }
+.kiet-bg-secondary { background-color: $kiet-bg-secondary !important; }
+.kiet-bg-tertiary { background-color: $kiet-bg-tertiary !important; }
+
+.kiet-text-primary { color: $kiet-text-primary !important; }
+.kiet-text-secondary { color: $kiet-text-secondary !important; }
+.kiet-text-tertiary { color: $kiet-text-tertiary !important; }
+
+/* Import Bootstrap */
+@import "bootstrap/scss/bootstrap";
