@@ -1,4 +1,4 @@
-// File: C:\Users\workw\Documents\cse-mtech-next\app\layout.jsx
+// File: /home/krrish/Desktop/mtech/cse-mtech-next/app/layout.jsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

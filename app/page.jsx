@@ -1,5 +1,5 @@
-// import { redirect } from 'next/navigation';
+import { redirect } from 'next/navigation';
 
-// export default function Home() {
-//   redirect('/programs/postgraduate-programs/cse-mtech');
-// }
+export default function Home() {
+  redirect('/programs/postgraduate-programs/cse-mtech');
+}

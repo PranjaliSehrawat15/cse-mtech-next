@@ -38,7 +38,7 @@ const imageByKey = {
   nandkishoryadav: "/assets/images/Nand_Kishor_Yadav_21838-removebg-preview.png",
   navdeshsingh: "/assets/images/Navdesh_Singh-removebg-preview.png",
   neetipahuja: "/assets/images/Neeti_Pahuja_21774-removebg-preview.png",
-  nishugupta: "/assets/images/Nishu_Gupta_21433-removebg-preview.png",
+  nishugupta: "/assets/images/Nishu_Gupta.png",
   nitinkumar: "/assets/images/Nitin_Kumar_21908-removebg-preview.png",
   omprakashkushwaha: "/assets/images/Omprakash_Kushwaha_21641-removebg-preview.png",
   pavansharma: "/assets/images/Pavan_Sharma_21681-removebg-preview.png",
@@ -138,6 +138,20 @@ const candidateKeysForName = (name) => {
   return Array.from(new Set(keys)).filter(Boolean);
 };
 
+// Per-image style overrides for photos that are not removebg cutouts
+const imageStyleOverrides = {
+  "Nishu_Gupta.png": {
+    objectFit: "cover",
+    objectPosition: "center 20%",
+  },
+};
+
+const getImageStyle = (src) => {
+  if (!src) return {};
+  const filename = src.split("/").pop();
+  return imageStyleOverrides[filename] || {};
+};
+
 const findImageForFaculty = (name) => {
   const keys = candidateKeysForName(name);
   for (const key of keys) {
@@ -214,13 +228,18 @@ export default function Faculty() {
   const FacultyCard = ({ faculty }) => (
     <div className="card h-100 border-0 shadow-sm rounded-4 flex-shrink-0 faculty-card position-relative transition-all" style={{ width: '220px', overflow: 'hidden' }}>
       {/* Top photo area - edge to edge */}
-      <div className="bg-light d-flex align-items-end justify-content-center position-relative w-100" style={{ height: '200px' }}>
+      <div className="bg-light d-flex align-items-end justify-content-center position-relative w-100" style={{ height: '200px', overflow: 'hidden' }}>
         {faculty.imageSrc ? (
           <img
             src={faculty.imageSrc}
             alt={faculty.name}
-            className="w-100 h-100 object-fit-contain object-position-bottom transition-transform"
-            style={{ transition: 'transform 0.5s' }}
+            className="w-100 h-100 transition-transform"
+            style={{
+              transition: 'transform 0.5s',
+              objectFit: faculty.imageSrc.includes('removebg') ? 'contain' : 'cover',
+              objectPosition: faculty.imageSrc.includes('removebg') ? 'bottom' : 'top center',
+              ...getImageStyle(faculty.imageSrc),
+            }}
             loading="lazy"
             onMouseOver={(e) => e.target.style.transform = 'scale(1.05)'}
             onMouseOut={(e) => e.target.style.transform = 'scale(1)'}

@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // any needed config
+    sassOptions: {
+        silenceDeprecations: ['import', 'legacy-js-api', 'global-builtin', 'color-functions', 'if-function'],
+    },
 };
 
 export default nextConfig;

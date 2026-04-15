@@ -1,4 +1,4 @@
-// File: C:\Users\workw\Documents\cse-mtech-next\app\programs\postgraduate-programs\cse-mtech\page.jsx
+// File: /home/krrish/Desktop/mtech/cse-mtech-next/app/programs/postgraduate-programs/cse-mtech/page.jsx
 import * as entry from '../../../../../../app/programs/postgraduate-programs/cse-mtech/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
