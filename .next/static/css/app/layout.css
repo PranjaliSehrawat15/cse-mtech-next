@@ -12003,3 +12003,183 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* ===== Infrastructure Image Pop-up Animation ===== */
+.infra-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.infra-image-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(22, 66, 101, 0.35), transparent 60%);
+  opacity: 0.7;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.infra-image-wrapper:hover::after {
+  opacity: 0.3;
+}
+
+.infra-image-wrapper img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.6s ease;
+  will-change: transform;
+}
+
+.infra-image-wrapper:hover img {
+  transform: scale(1.08) translateY(-4px);
+  filter: brightness(1.05);
+}
+
+/* ===== Program Highlights — icon bg + text color on hover, animated top bar ===== */
+.program-highlight-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-highlight-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #F26520;
+  border-radius: 1rem 1rem 0 0;
+  transition: width 0.4s ease;
+  z-index: 2;
+}
+
+.program-highlight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.program-highlight-card:hover::before {
+  width: 100%;
+}
+
+.program-highlight-card .ph-icon-wrap {
+  transition: background-color 0.3s ease;
+}
+
+.program-highlight-card:hover .ph-icon-wrap {
+  background-color: #164265 !important;
+  border-color: #164265 !important;
+}
+
+.program-highlight-card:hover .ph-icon-wrap svg {
+  color: #ffffff !important;
+}
+
+.program-highlight-card .ph-text {
+  transition: color 0.3s ease;
+}
+
+.program-highlight-card:hover .ph-text {
+  color: #F26520 !important;
+}
+
+/* ===== Club Card Hover ===== */
+.club-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.club-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.12) !important;
+}
+
+.club-card .club-img {
+  transition: transform 0.4s ease;
+}
+
+.club-card:hover .club-img {
+  transform: scale(1.08);
+}
+
+.club-card .club-explore-btn {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.club-card:hover .club-explore-btn {
+  background-color: #164265 !important;
+  color: #ffffff !important;
+  border-color: #164265 !important;
+}
+
+/* ===== Why Choose — pop-up, no border ===== */
+.why-choose-card {
+  border: none !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-choose-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.12) !important;
+}
+
+/* ===== Research Card ===== */
+.research-card {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.research-card:hover {
+  background-color: #ffffff !important;
+  border-color: #F26520 !important;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+}
+
+/* ===== ProgramDetails — Vision/Mission Card ===== */
+.vm-card {
+  border: none !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vm-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.1) !important;
+}
+
+/* ===== Program Outcome Card ===== */
+.po-card {
+  border: 1px solid transparent !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.po-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+  border-color: rgba(242, 101, 32, 0.35) !important;
+}
+
+.po-card .po-icon-wrap {
+  transition: background-color 0.3s ease;
+}
+
+.po-card:hover .po-icon-wrap {
+  background-color: #164265 !important;
+}
+
+.po-card:hover .po-icon-wrap svg {
+  color: #ffffff !important;
+}
+
+.po-card .po-id {
+  transition: color 0.3s ease;
+}
+
+.po-card:hover .po-id {
+  color: #F26520 !important;
+}

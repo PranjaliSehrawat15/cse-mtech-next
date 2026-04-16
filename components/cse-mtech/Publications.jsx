@@ -66,7 +66,7 @@ export default function Publications() {
         {/* Header */}
         <div className="mb-5 text-center position-relative">
           <h2 className="display-6 fw-bold text-dark mb-2">
-            Publications & Research
+            Publications &amp; Research
           </h2>
           <div className="d-flex justify-content-center">
             <div className="rounded-pill" style={{ width: '6rem', height: '0.25rem', backgroundColor: '#F26520' }}></div>
@@ -74,22 +74,23 @@ export default function Publications() {
         </div>
 
         {/* Publication Cards */}
-        <div className="row g-4 mb-5 justify-content-center">
-          {publicationCategories.map((category) => {
-            const Icon = category.icon;
-            return (
+        <div className="mb-5 mx-auto" style={{ maxWidth: '1000px' }}>
+          <div className="row g-4 justify-content-center">
+            {publicationCategories.map((category) => {
+              const Icon = category.icon;
+              return (
               <div key={category.id} className="col-sm-6 col-lg-4 d-flex justify-content-center">
                 <div
-                  className="card border-0 d-flex flex-row align-items-center justify-content-center px-4 py-4 w-100 g-hover-card shadow-sm"
+                  className="card border-0 d-flex flex-row align-items-center justify-content-center px-4 py-4 w-100 shadow-sm"
                   style={{ borderRadius: '16px', transition: 'all 0.3s', cursor: 'pointer' }}
-                  onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#F26520'; e.currentTarget.style.boxShadow = '0px 8px 32px rgba(242,101,32,0.12)'; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'transparent'; e.currentTarget.style.boxShadow = '0 .125rem .25rem rgba(0,0,0,.075)'; }}
+                  onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0px 8px 32px rgba(0,0,0,0.1)'; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = '0 .125rem .25rem rgba(0,0,0,.075)'; }}
                 >
                   {/* Icon */}
                   <div className="text-dark me-4 flex-shrink-0">
                     <Icon size={54} strokeWidth={1.2} />
                   </div>
-                  
+
                   {/* Text Container */}
                   <div className="d-flex flex-column align-items-center justify-content-center" style={{ minWidth: '120px' }}>
                     <span className="text-dark fw-semibold text-uppercase tracking-wide mb-1 text-center" style={{ fontSize: '13px' }}>
@@ -103,37 +104,36 @@ export default function Publications() {
               </div>
             );
           })}
+          </div>
         </div>
 
         {/* Featured Research */}
-        <div className="card border-0 bg-white mb-5 mx-auto shadow-sm" style={{ borderRadius: '20px', maxWidth: '1000px' }}>
-          <div className="card-body p-4 p-md-5">
-            <h3 className="h4 fw-bold text-dark mb-4 text-center text-md-start">
-              Recent Research Highlights
-            </h3>
-            <div className="row g-4">
-              {featuredResearchList.map((research) => (
-                <div key={research.id} className="col-md-6">
-                  <div
-                    onClick={() => setActiveResearch(research)}
-                    className="d-flex align-items-start p-3 rounded-3 bg-light border border-transparent transition-all cursor-pointer g-hover-card"
-                    style={{ transition: 'all 0.3s' }}
-                    onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'white'; e.currentTarget.style.borderColor = '#F26520'; e.currentTarget.style.boxShadow = '0 .125rem .25rem rgba(0,0,0,.075)'; }}
-                    onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#f8f9fa'; e.currentTarget.style.borderColor = 'transparent'; e.currentTarget.style.boxShadow = 'none'; }}
-                  >
-                    <FileText className="kiet-text-primary flex-shrink-0 mt-1 me-3" fill="#dbeafe" size={28} />
-                    <div>
-                      <p className="text-dark fw-semibold mb-1" style={{ fontSize: '15px' }}>
-                        {research.title}
-                      </p>
-                      <p className="text-secondary mb-0" style={{ fontSize: '13px' }}>
-                        Published by {research.publisher}
-                      </p>
-                    </div>
+        <div className="mb-5 mx-auto card border-0 shadow-sm p-4 p-md-5 bg-white" style={{ maxWidth: '1000px', borderRadius: '16px' }}>
+          <h3 className="h4 fw-bold text-dark mb-4 text-center text-md-start">
+            Recent Research Highlights
+          </h3>
+          <div className="row g-4">
+            {featuredResearchList.map((research) => (
+              <div key={research.id} className="col-md-6 d-flex">
+                <div
+                  onClick={() => setActiveResearch(research)}
+                  className="research-card d-flex align-items-start p-3 rounded-3 border bg-light w-100 position-relative"
+                  style={{ cursor: 'pointer', transition: 'all 0.2s ease-in-out' }}
+                  onMouseEnter={(e) => { e.currentTarget.classList.add('shadow-sm'); e.currentTarget.style.transform = 'translateY(-2px)'; }}
+                  onMouseLeave={(e) => { e.currentTarget.classList.remove('shadow-sm'); e.currentTarget.style.transform = 'none'; }}
+                >
+                  <FileText className="kiet-text-primary flex-shrink-0 mt-1 me-3" fill="#dbeafe" size={28} />
+                  <div>
+                    <p className="text-dark fw-semibold mb-1" style={{ fontSize: '15px' }}>
+                      {research.title}
+                    </p>
+                    <p className="text-secondary mb-0" style={{ fontSize: '13px' }}>
+                      Published by {research.publisher}
+                    </p>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -141,11 +141,11 @@ export default function Publications() {
         <div className="mx-auto" style={{ maxWidth: '1000px' }}>
           <div className="d-flex flex-column gap-3">
             {annualReports.map((report) => (
-              <div 
+              <div
                 key={report.id}
                 onClick={() => setActivePdf(report.id)}
-                className="card border bg-white d-flex flex-row align-items-center p-3 shadow-sm transition-all cursor-pointer"
-                style={{ borderRadius: '8px' }}
+                className="card bg-white d-flex flex-row align-items-center p-3 shadow-sm cursor-pointer"
+                style={{ border: '1px solid #dee2e6', borderRadius: '8px', transition: 'all 0.3s' }}
                 onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#F26520'; e.currentTarget.style.boxShadow = '0 .5rem 1rem rgba(0,0,0,.15)'; }}
                 onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#dee2e6'; e.currentTarget.style.boxShadow = '0 .125rem .25rem rgba(0,0,0,.075)'; }}
               >
@@ -172,49 +172,49 @@ export default function Publications() {
                 </h3>
                 <button type="button" className="btn-close" onClick={() => setActiveResearch(null)}></button>
               </div>
-              
+
               {/* Modal Body (Table) */}
               <div className="modal-body p-4 p-md-5">
-                 <div className="table-responsive border rounded-3 overflow-hidden shadow-sm">
-                   <table className="table table-hover mb-0 align-middle">
-                     <thead className="table-light">
-                       <tr>
-                         <th className="fw-semibold text-secondary w-25 py-3 px-4">Detail</th>
-                         <th className="fw-semibold text-secondary py-3 px-4">Information</th>
-                       </tr>
-                     </thead>
-                     <tbody className="border-top-0">
-                       <tr>
-                         <td className="fw-semibold text-dark py-3 px-4">Title</td>
-                         <td className="text-secondary py-3 px-4">{activeResearch.title}</td>
-                       </tr>
-                       <tr>
-                         <td className="fw-semibold text-dark py-3 px-4">Name of Journal</td>
-                         <td className="text-secondary py-3 px-4">{activeResearch.journal}</td>
-                       </tr>
-                       <tr>
-                         <td className="fw-semibold text-dark py-3 px-4">Publisher</td>
-                         <td className="text-secondary py-3 px-4">{activeResearch.publisher}</td>
-                       </tr>
-                       <tr>
-                         <td className="fw-semibold text-dark py-3 px-4">Name of faculty</td>
-                         <td className="text-secondary py-3 px-4">{activeResearch.faculty}</td>
-                       </tr>
-                       <tr>
-                         <td className="fw-semibold text-dark py-3 px-4">Impact factor</td>
-                         <td className="text-secondary py-3 px-4">{activeResearch.impactFactor}</td>
-                       </tr>
-                       <tr>
-                         <td className="fw-semibold text-dark py-3 px-4">Link</td>
-                         <td className="py-3 px-4">
-                           <a href={activeResearch.link} target="_blank" rel="noopener noreferrer" className="text-primary fw-medium text-decoration-none">
-                             View Publication
-                           </a>
-                         </td>
-                       </tr>
-                     </tbody>
-                   </table>
-                 </div>
+                <div className="table-responsive border rounded-3 overflow-hidden shadow-sm">
+                  <table className="table table-hover mb-0 align-middle">
+                    <thead className="table-light">
+                      <tr>
+                        <th className="fw-semibold text-secondary w-25 py-3 px-4">Detail</th>
+                        <th className="fw-semibold text-secondary py-3 px-4">Information</th>
+                      </tr>
+                    </thead>
+                    <tbody className="border-top-0">
+                      <tr>
+                        <td className="fw-semibold text-dark py-3 px-4">Title</td>
+                        <td className="text-secondary py-3 px-4">{activeResearch.title}</td>
+                      </tr>
+                      <tr>
+                        <td className="fw-semibold text-dark py-3 px-4">Name of Journal</td>
+                        <td className="text-secondary py-3 px-4">{activeResearch.journal}</td>
+                      </tr>
+                      <tr>
+                        <td className="fw-semibold text-dark py-3 px-4">Publisher</td>
+                        <td className="text-secondary py-3 px-4">{activeResearch.publisher}</td>
+                      </tr>
+                      <tr>
+                        <td className="fw-semibold text-dark py-3 px-4">Name of faculty</td>
+                        <td className="text-secondary py-3 px-4">{activeResearch.faculty}</td>
+                      </tr>
+                      <tr>
+                        <td className="fw-semibold text-dark py-3 px-4">Impact factor</td>
+                        <td className="text-secondary py-3 px-4">{activeResearch.impactFactor}</td>
+                      </tr>
+                      <tr>
+                        <td className="fw-semibold text-dark py-3 px-4">Link</td>
+                        <td className="py-3 px-4">
+                          <a href={activeResearch.link} target="_blank" rel="noopener noreferrer" className="text-primary fw-medium text-decoration-none">
+                            View Publication
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>

@@ -212,9 +212,9 @@ export default function Faculty() {
   };
 
   const FacultyCard = ({ faculty }) => (
-    <div className="card h-100 border-0 shadow-sm rounded-4 flex-shrink-0 faculty-card position-relative transition-all" style={{ width: '220px', overflow: 'hidden' }}>
+    <div className="card border-0 shadow-sm rounded-4 flex-shrink-0 faculty-card position-relative transition-all d-flex flex-column" style={{ width: '200px', height: '290px', overflow: 'hidden' }}>
       {/* Top photo area - edge to edge */}
-      <div className="bg-light d-flex align-items-end justify-content-center position-relative w-100" style={{ height: '200px' }}>
+      <div className="bg-light flex-shrink-0 d-flex align-items-end justify-content-center position-relative w-100" style={{ height: '170px' }}>
         {faculty.imageSrc ? (
           <img
             src={faculty.imageSrc}
@@ -230,21 +230,18 @@ export default function Faculty() {
         )}
       </div>
 
-      <div className="card-body d-flex flex-column align-items-center text-center p-3 z-1 bg-white position-relative">
+      <div className="card-body flex-grow-1 d-flex flex-column align-items-center text-center p-3 z-1 bg-white position-relative">
         <h4 className="h6 fw-bold text-dark mb-1 lh-sm w-100 text-truncate" style={{ color: '#164265' }}>
           {faculty.name}
         </h4>
         <p className="small text-secondary mb-1 lh-sm whitespace-pre-line" style={{ fontSize: '0.75rem' }}>
           {faculty.designation}
         </p>
-        {faculty.degree ? (
-          <p className="text-muted fw-semibold mb-2" style={{ fontSize: '0.65rem' }}>{faculty.degree}</p>
-        ) : null}
         
         {/* Email Display Effect */}
-        <div className="mt-auto pt-2 w-100 px-2 faculty-mail-container">
-          <div className="d-flex align-items-center rounded-pill border bg-light text-secondary transition-all overflow-hidden faculty-mail-pill" style={{ height: '32px', cursor: 'default' }}>
-            <div className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle mail-icon-wrapper" style={{ width: '32px', height: '32px' }}>
+        <div className="mt-auto pt-2 w-100 d-flex justify-content-center faculty-mail-container">
+          <div className="d-flex align-items-center rounded-pill border bg-light text-secondary transition-all overflow-hidden faculty-mail-pill" style={{ height: '32px', maxWidth: '32px', cursor: 'pointer' }}>
+            <div className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle mail-icon-wrapper" style={{ width: '30px', height: '30px' }}>
               <Mail size={14} />
             </div>
             <div className="mail-text fw-semibold tracking-wide text-truncate" style={{ fontSize: '0.7rem' }}>
@@ -263,23 +260,26 @@ export default function Faculty() {
           box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
           z-index: 10;
         }
+        .faculty-mail-pill {
+          transition: max-width 0.4s cubic-bezier(0.23,1,0.32,1), background-color 0.3s, border-color 0.3s, color 0.3s !important;
+        }
         .faculty-mail-pill .mail-text {
-          max-width: 0;
           opacity: 0;
-          transition: all 0.5s cubic-bezier(0.23,1,0.32,1);
+          transition: opacity 0.3s;
         }
-        .faculty-card:hover .faculty-mail-pill {
-          background-color: #164265 !important;
+        .faculty-mail-pill:hover {
+          max-width: 200px !important;
+          background-color: #273e5a !important;
           color: white !important;
-          border-color: #164265 !important;
+          border-color: #273e5a !important;
         }
-        .faculty-card:hover .mail-text {
-          max-width: 200px;
+        .faculty-mail-pill:hover .mail-text {
           opacity: 1;
-          padding-right: 15px;
+          padding-right: 12px;
+          padding-left: 4px;
         }
-        .faculty-card:hover .mail-icon-wrapper {
-          background-color: transparent !important;
+        .faculty-mail-pill:hover .mail-icon-wrapper {
+          color: white !important;
         }
         /* Hide scrollbar */
         .no-scrollbar::-webkit-scrollbar {

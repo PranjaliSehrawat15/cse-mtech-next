@@ -76,16 +76,13 @@ export default function Highlights() {
               const Icon = item.icon;
               return (
                 <div key={index} className="col-md-6 col-lg-4">
-                  <div className="card h-100 border-0 shadow-sm p-4 rounded-4 position-relative g-hover-card">
-                    {/* Subtle accent line on hover could be handled via global css, using top border here */}
-                    <div className="position-absolute top-0 start-0 w-100 bg-kiet-secondary" style={{ height: '3px', borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem' }}></div>
-                    
-                    <div className="d-flex gap-3 align-items-start mt-2">
-                      <div className="flex-shrink-0 d-flex align-items-center justify-content-center border rounded-3 p-2" style={{ backgroundColor: '#16426510', borderColor: '#16426520', width: '3rem', height: '3rem' }}>
+                  <div className="card h-100 border-0 shadow-sm p-4 rounded-4 program-highlight-card">
+                    <div className="d-flex gap-3 align-items-center mt-2">
+                      <div className="ph-icon-wrap flex-shrink-0 d-flex align-items-center justify-content-center border rounded-3 p-2" style={{ backgroundColor: '#16426510', borderColor: '#16426520', width: '3rem', height: '3rem' }}>
                         <Icon size={24} strokeWidth={1.5} className="kiet-text-tertiary" />
                       </div>
                       <div className="flex-grow-1">
-                        <p className="mb-0 text-dark fw-bold small lh-base">
+                        <p className="ph-text mb-0 text-dark fw-bold small lh-base text-start">
                           {item.text}
                         </p>
                       </div>
@@ -97,7 +94,7 @@ export default function Highlights() {
           </div>
         </div>
 
-        {/* Header */}
+        {/* Department Highlights Header */}
         <div className="mb-5 text-center">
           <h2 className="display-6 fw-bold text-dark mb-2">
             Department&apos;s Highlights
@@ -111,8 +108,7 @@ export default function Highlights() {
         <div className="row g-4">
           {highlights.map((highlight) => (
             <div key={highlight.id} className="col-lg-6">
-              <div className="card h-100 border-0 shadow-sm rounded-4 p-4 row g-0">
-                {/* Content aligned row -> actually we can use flex */}
+              <div className="card h-100 border-0 shadow-sm rounded-4 p-4">
                 <div className="d-flex flex-column flex-sm-row gap-4 align-items-center align-items-sm-start h-100">
                   {/* Image Container */}
                   <div className="flex-shrink-0 rounded-3 overflow-hidden shadow-sm" style={{ width: '100px', height: '100px' }}>
@@ -138,7 +134,7 @@ export default function Highlights() {
           ))}
         </div>
 
-        {/* Additional Info */}
+        {/* Why Choose Our Program */}
         <div className="mt-5 pt-5 text-center">
           <h3 className="h3 fw-bold text-dark mb-4">
             Why Choose Our Program?
@@ -159,7 +155,7 @@ export default function Highlights() {
               },
             ].map((stat, index) => (
               <div key={index} className="col-md-4">
-                <div className="card border-0 shadow-sm p-5 rounded-4 h-100">
+                <div className="card border-0 shadow-sm p-5 rounded-4 h-100 why-choose-card">
                   <p className="display-4 fw-bold mb-3" style={{ color: '#F26520' }}>
                     {stat.number}
                   </p>

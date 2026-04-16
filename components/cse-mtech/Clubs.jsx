@@ -51,7 +51,7 @@ export default function Clubs() {
             <div className="rounded-pill" style={{ width: '6rem', height: '0.25rem', backgroundColor: '#F26520' }}></div>
           </div>
         </div>
-        
+
         {/* Timeline Grid */}
         <div className="position-relative mt-5">
           {/* Continuous Line (Desktop Only) */}
@@ -65,21 +65,19 @@ export default function Clubs() {
               const isTop = index % 2 === 0;
 
               return (
-                <div key={club.id} className={`col-md-6 col-lg-3 d-flex flex-column position-relative g-hover-card ${isTop ? "mb-lg-5 pb-lg-5" : "mt-lg-5 pt-lg-5"}`}>
-                  <div 
+                <div key={club.id} className={`col-md-6 col-lg-3 d-flex flex-column position-relative ${isTop ? "mb-lg-5 pb-lg-5" : "mt-lg-5 pt-lg-5"}`}>
+                  <div
                     onClick={() => setSelectedClub(club)}
-                    className="card h-100 border-0 shadow-sm rounded-4 cursor-pointer text-center group"
-                    style={{ maxWidth: '280px', margin: '0 auto', transition: 'all 0.3s ease' }}
+                    className="card border-0 shadow-sm rounded-4 cursor-pointer text-center club-card overflow-hidden"
+                    style={{ width: '100%', maxWidth: '250px', height: '240px', margin: '0 auto' }}
                   >
                     {/* Image Box */}
-                    <div className="position-relative w-100 d-flex align-items-center justify-content-center p-4 bg-light" style={{ height: '140px', borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem' }}>
+                    <div className="position-relative w-100 d-flex align-items-center justify-content-center p-3 text-center bg-light flex-shrink-0" style={{ height: '110px' }}>
                       <img
                         src={club.image}
                         alt={club.name}
-                        className="w-100 h-100 object-fit-contain transition-transform"
-                        style={{ transition: 'transform 0.5s' }}
-                        onMouseOver={(e) => e.target.style.transform = 'scale(1.05)'}
-                        onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
+                        className="club-img w-100 h-100 object-fit-contain"
+                        style={{ mixBlendMode: 'multiply' }}
                       />
                     </div>
 
@@ -89,9 +87,9 @@ export default function Clubs() {
                         {club.name}
                       </h3>
                       {/* Explore Button */}
-                      <button 
+                      <button
                         onClick={() => setSelectedClub(club)}
-                        className="btn btn-outline-secondary w-100 mt-auto rounded-3 d-flex align-items-center justify-content-center gap-1 group-btn"
+                        className="club-explore-btn btn btn-outline-secondary w-100 mt-auto rounded-3 d-flex align-items-center justify-content-center gap-1"
                         style={{ fontSize: '0.875rem', fontWeight: '600' }}
                       >
                         Explore
@@ -111,32 +109,32 @@ export default function Clubs() {
         <div className="modal show d-block" tabIndex="-1" style={{ backgroundColor: 'rgba(15, 23, 42, 0.7)', backdropFilter: 'blur(4px)' }}>
           <div className="modal-dialog modal-dialog-centered modal-lg">
             <div className="modal-content border-0 shadow-lg rounded-4 overflow-hidden position-relative">
-              <button 
+              <button
                 type="button"
                 className="btn-close position-absolute top-0 end-0 m-3 z-3 bg-white opacity-100 rounded-circle shadow-sm"
                 style={{ padding: '0.75rem' }}
                 onClick={() => setSelectedClub(null)}
                 aria-label="Close"
               ></button>
-              
+
               <div className="modal-body p-5 d-flex flex-column align-items-center text-center">
                 <h2 className="h3 fw-bold mb-4" style={{ color: '#164265' }}>
                   {selectedClub.name}
                 </h2>
-                
+
                 <div className="d-flex flex-wrap justify-content-center gap-2 mb-4">
                   {selectedClub.tags.map(tag => (
-                   <span key={tag} className="badge border fw-bold text-uppercase tracking-wider" style={{ backgroundColor: '#f8fafc', color: '#164265', borderColor: '#e2e8f0', letterSpacing: '0.05em' }}>
-                     {tag}
-                   </span>
+                    <span key={tag} className="badge border fw-bold text-uppercase tracking-wider" style={{ backgroundColor: '#f8fafc', color: '#164265', borderColor: '#e2e8f0', letterSpacing: '0.05em' }}>
+                      {tag}
+                    </span>
                   ))}
                 </div>
-                
+
                 <p className="text-secondary lh-lg mb-5" style={{ fontSize: '1rem', maxWidth: '36rem' }}>
                   {selectedClub.description}
                 </p>
-                
-                <button 
+
+                <button
                   className="btn btn-primary fw-bold px-5 py-2 rounded-3 shadow-sm"
                   style={{ backgroundColor: '#164265', borderColor: '#164265' }}
                   onClick={() => setSelectedClub(null)}
