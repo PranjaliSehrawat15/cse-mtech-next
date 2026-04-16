@@ -68,9 +68,12 @@ export default function Publications() {
           <h2 className="display-6 fw-bold text-dark mb-2">
             Publications &amp; Research
           </h2>
-          <div className="d-flex justify-content-center">
+          <div className="d-flex justify-content-center mb-3">
             <div className="rounded-pill" style={{ width: '6rem', height: '0.25rem', backgroundColor: '#F26520' }}></div>
           </div>
+          <p className="text-secondary fw-medium lead mb-0">
+            (Last 3 Years)
+          </p>
         </div>
 
         {/* Publication Cards */}
