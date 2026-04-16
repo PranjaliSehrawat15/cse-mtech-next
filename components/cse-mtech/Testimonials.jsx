@@ -6,8 +6,7 @@ const TESTIMONIALS = [
   {
     id: 1,
     name: "Neha",
-    company: "Google",
-    role: "ML Engineer",
+    role: "M.Tech Scholar",
     initials: "AK",
     image: "/assets/Testimonials/Neha.webp",
     avatarBg: "#164265",
@@ -18,7 +17,6 @@ const TESTIMONIALS = [
   {
     id: 2,
     name: "Sakshi",
-    company: "Microsoft",
     role: "Data Scientist",
     initials: "PS",
     image: "/assets/Testimonials/Sakshi.webp",
@@ -30,7 +28,6 @@ const TESTIMONIALS = [
   {
     id: 3,
     name: "Abhishek",
-    company: "KIET Group of Institutions",
     role: "Assistant Professor",
     initials: "RP",
     image: "/assets/Testimonials/Abhishek.webp",
@@ -42,33 +39,28 @@ const TESTIMONIALS = [
   {
     id: 4,
     name: "Kajal Tyagi",
-    company: "ZF Group",
-    role: "System and Function Developer-II (AIML)",
+    role: "System and Function Developer",
     initials: "KT",
     image: "/assets/Testimonials/Kajal_Tyagi.jpeg",
     avatarBg: "#164265",
     message:
       "The M.Tech program at KIET equipped me with the right skills and practical exposure to excel in the AI/ML domain. The industry-oriented curriculum helped me land my dream role.",
     rating: 5,
-    passoutYear: 2024,
   },
   {
     id: 5,
     name: "Nidhi",
-    company: "Cognizant",
-    role: "Programmer Analyst",
+    role: "Programmer Analyst (Cognizant)",
     initials: "N",
     image: "/assets/Testimonials/Nidhi.png",
     avatarBg: "#1a5c8a",
     message:
       "Studying at KIET gave me hands-on experience and excellent mentorship. The program's focus on real-world problem-solving was key to securing my position at Cognizant.",
     rating: 5,
-    passoutYear: 2025,
   },
   {
     id: 6,
     name: "Shweta Singh",
-    company: "Alumni",
     role: "M.Tech Scholar",
     initials: "SS",
     image: "/assets/Testimonials/shweta.png",
@@ -80,7 +72,6 @@ const TESTIMONIALS = [
   {
     id: 7,
     name: "Vrinda Mishra",
-    company: "Alumni",
     role: "IP Consultant (VisionLex)",
     initials: "VM",
     image: "/assets/Testimonials/vrinda_mishra.png",

@@ -31,7 +31,7 @@ export default function COE() {
     {
       id: 'dgx-centre',
       title: 'Supercomputing with DGX',
-      image: '/images/dgx-supercomputer.png',
+      image: '/assets/coe/dgx-supercomputer.png',
       description:
         'Powered by the NVIDIA DGX A100, this Centre of Excellence brings enterprise-level AI infrastructure directly to students. It enables training of large-scale deep learning models and real-time AI deployment.',
       detail:
