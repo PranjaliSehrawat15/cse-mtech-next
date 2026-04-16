@@ -82,7 +82,7 @@ const facultyMembers = [
   {
     id: 2,
     name: "Dr. Madhu Gautam",
-    designation: "Associate Professor\nProgram Head of M.Tech",
+    designation: "Associate Professor\nProgram Head (M.Tech)",
     email: "madhu.gautam@kiet.edu",
   },
   {
