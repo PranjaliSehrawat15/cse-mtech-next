@@ -42,26 +42,28 @@ const TESTIMONIALS = [
   {
     id: 4,
     name: "Kajal Tyagi",
-    company: "Alumni",
-    role: "System and Function Developer",
+    company: "ZF Group",
+    role: "System and Function Developer-II (AIML)",
     initials: "KT",
-    image: "/assets/Testimonials/Kajal_Tyagi.webp",
-    avatarBg: "#2d6a4f",
+    image: "/assets/Testimonials/Kajal_Tyagi.jpeg",
+    avatarBg: "#164265",
     message:
-      "The M.Tech program offered a perfect balance of theory and practical implementation. The support from faculty was truly exceptional and helped shape my technical expertise.",
+      "The M.Tech program at KIET equipped me with the right skills and practical exposure to excel in the AI/ML domain. The industry-oriented curriculum helped me land my dream role.",
     rating: 5,
+    passoutYear: 2024,
   },
   {
     id: 5,
     name: "Nidhi",
-    company: "Alumni",
-    role: "Programmer Analyst (Cognizant)",
+    company: "Cognizant",
+    role: "Programmer Analyst",
     initials: "N",
-    image: "/assets/Testimonials/Nidhi.webp",
-    avatarBg: "#4a4e69",
+    image: "/assets/Testimonials/Nidhi.png",
+    avatarBg: "#1a5c8a",
     message:
-      "KIET provided an incredible platform to hone my skills. The state-of-the-art labs and industry-aligned curriculum prepared me well for real-world engineering challenges.",
+      "Studying at KIET gave me hands-on experience and excellent mentorship. The program's focus on real-world problem-solving was key to securing my position at Cognizant.",
     rating: 5,
+    passoutYear: 2025,
   },
   {
     id: 6,
@@ -69,7 +71,7 @@ const TESTIMONIALS = [
     company: "Alumni",
     role: "M.Tech Scholar",
     initials: "SS",
-    image: "/assets/Testimonials/Shweta_Singh.webp",
+    image: "/assets/Testimonials/shweta.png",
     avatarBg: "#9c6644",
     message:
       "My experience during the core technical coursework was amazing. The emphasis on practical research and problem solving made all the difference in my learning journey.",
@@ -81,7 +83,7 @@ const TESTIMONIALS = [
     company: "Alumni",
     role: "IP Consultant (VisionLex)",
     initials: "VM",
-    image: "/assets/Testimonials/Vrinda_Mishra.webp",
+    image: "/assets/Testimonials/vrinda_mishra.png",
     avatarBg: "#606c38",
     message:
       "Choosing this program was the best decision for my career. The collaborative learning environment and advanced computing facilities were truly un-matched.",
@@ -210,10 +212,20 @@ function TestimonialCard({ testimonial }) {
             style={{
               color: "#6B7280",
               fontSize: "12px",
-              margin: 0,
+              margin: "0 0 1px",
             }}
           >
             {testimonial.role}
+          </p>
+          <p
+            style={{
+              color: "#F26520",
+              fontSize: "11.5px",
+              fontWeight: "600",
+              margin: 0,
+            }}
+          >
+            {testimonial.company}{testimonial.passoutYear ? ` · ${testimonial.passoutYear}` : ""}
           </p>
         </div>
       </div>
