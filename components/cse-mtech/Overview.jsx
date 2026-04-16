@@ -80,8 +80,8 @@ export default function Overview() {
 
         <div className="row align-items-center g-5 mb-5">
           {/* Content */}
-          <div className="col-lg-7 d-flex flex-column gap-4">
-            <div className="position-relative bg-white rounded p-4 p-md-5 shadow-sm border" style={{ borderLeft: '4px solid #F26520', borderTop: '0', borderRight: '0', borderBottom: '0' }}>
+          <div className="col-lg-8 d-flex flex-column gap-4">
+            <div className="position-relative bg-white p-4 p-md-5 shadow border-0" style={{ borderLeft: '4px solid #F26520', borderRadius: '0.75rem' }}>
               <div className="position-absolute top-0 end-0 opacity-25 p-3">
                 <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor" style={{ opacity: 0.1, color: '#164265' }}>
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
@@ -125,9 +125,9 @@ export default function Overview() {
           </div>
 
           {/* Dean's Image */}
-          <div className="col-lg-5 position-relative d-flex justify-content-center justify-content-lg-end mt-4 mt-lg-0">
-            <div className="card border-0 shadow-lg text-center" style={{ width: '100%', maxWidth: '360px', backgroundColor: '#f8f9fa', borderRadius: '1rem' }}>
-                <div className="card-body pt-5 d-flex justify-content-center align-items-end" style={{ height: '400px' }}> 
+          <div className="col-lg-4 position-relative d-flex justify-content-center justify-content-lg-end mt-4 mt-lg-0 pb-4">
+            <div className="card border-0 shadow-sm text-center position-relative" style={{ width: '100%', maxWidth: '360px', backgroundColor: '#f8f9fa', borderRadius: '1rem' }}>
+                <div className="card-body pt-5 px-3 d-flex justify-content-center align-items-end" style={{ height: '380px' }}> 
                   <img
                     src="/assets/images/Dr._Vineet_Sharma_4478-removebg-preview.png"
                     alt="Dr. Vineet Kumar Sharma - Dean, CSE"
@@ -135,9 +135,13 @@ export default function Overview() {
                     style={{ objectPosition: 'bottom' }}
                   />
                 </div>
-                <div className="card-footer text-white border-0 py-3" style={{ backgroundColor: '#164265', borderBottom: '4px solid #F26520', borderRadius: '0 0 1rem 1rem' }}>
-                  <h4 className="fw-bold h5 mb-1 text-white">Dr. Vineet Kumar Sharma</h4>
-                  <p className="small text-uppercase tracking-widest fw-medium mb-0" style={{ color: '#ced4da', letterSpacing: '0.1em' }}>Senior Professor & Dean, CSE</p>
+                
+                {/* Floating Nameplate */}
+                <div className="position-absolute start-50 translate-middle-x" style={{ bottom: '-1.5rem', width: '90%', zIndex: 10 }}>
+                  <div className="py-3 px-2" style={{ backgroundColor: '#164265', borderRadius: '0.5rem', boxShadow: '0px 6px 0px 0px #F26520' }}>
+                    <h4 className="fw-bold h6 mb-1 text-white">Dr. Vineet Kumar Sharma</h4>
+                    <p className="small text-uppercase fw-medium mb-0" style={{ color: '#ced4da', letterSpacing: '0.05em', fontSize: '0.75rem' }}>Senior Professor & Dean, CSE</p>
+                  </div>
                 </div>
             </div>
           </div>
