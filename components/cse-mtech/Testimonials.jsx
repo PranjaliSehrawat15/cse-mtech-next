@@ -39,6 +39,54 @@ const TESTIMONIALS = [
       "The research opportunities and collaboration with industry experts during the M.Tech program gave me a significant advantage. The faculty are genuinely committed educators.",
     rating: 5,
   },
+  {
+    id: 4,
+    name: "Kajal Tyagi",
+    company: "Alumni",
+    role: "System and Function Developer",
+    initials: "KT",
+    image: "/assets/Testimonials/Kajal_Tyagi.webp",
+    avatarBg: "#2d6a4f",
+    message:
+      "The M.Tech program offered a perfect balance of theory and practical implementation. The support from faculty was truly exceptional and helped shape my technical expertise.",
+    rating: 5,
+  },
+  {
+    id: 5,
+    name: "Nidhi",
+    company: "Alumni",
+    role: "Programmer Analyst (Cognizant)",
+    initials: "N",
+    image: "/assets/Testimonials/Nidhi.webp",
+    avatarBg: "#4a4e69",
+    message:
+      "KIET provided an incredible platform to hone my skills. The state-of-the-art labs and industry-aligned curriculum prepared me well for real-world engineering challenges.",
+    rating: 5,
+  },
+  {
+    id: 6,
+    name: "Shweta Singh",
+    company: "Alumni",
+    role: "M.Tech Scholar",
+    initials: "SS",
+    image: "/assets/Testimonials/Shweta_Singh.webp",
+    avatarBg: "#9c6644",
+    message:
+      "My experience during the core technical coursework was amazing. The emphasis on practical research and problem solving made all the difference in my learning journey.",
+    rating: 5,
+  },
+  {
+    id: 7,
+    name: "Vrinda Mishra",
+    company: "Alumni",
+    role: "IP Consultant (VisionLex)",
+    initials: "VM",
+    image: "/assets/Testimonials/Vrinda_Mishra.webp",
+    avatarBg: "#606c38",
+    message:
+      "Choosing this program was the best decision for my career. The collaborative learning environment and advanced computing facilities were truly un-matched.",
+    rating: 5,
+  },
 ];
 
 const VISIBLE = 3;
@@ -226,7 +274,7 @@ export default function Testimonials() {
   const activeDot = current % TESTIMONIALS.length;
 
   return (
-    <section id="testimonials" className="pt-4 pb-5 bg-white">
+    <section id="testimonials" className="pb-5 bg-white">
       <div className="container">
         {/* Section header */}
         <div className="mb-5 text-center">
