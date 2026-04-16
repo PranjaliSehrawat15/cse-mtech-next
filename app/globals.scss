@@ -16,6 +16,16 @@ $kiet-text-tertiary: #164265;
 .kiet-text-secondary { color: $kiet-text-secondary !important; }
 .kiet-text-tertiary { color: $kiet-text-tertiary !important; }
 
+/* Match the container width and padding to the COE section globally */
+$container-padding-x: 3rem; /* 1.5rem on each side */
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1280px
+);
+
 /* Import Bootstrap */
 @import "bootstrap/scss/bootstrap";
 
