@@ -95,9 +95,28 @@ export default function Placement() {
                 </tr>
               </thead>
               <tbody className="text-dark">
-                <tr className="transition-all-300" style={{ cursor: 'default' }}>
+                 <tr className="transition-all-300 bg-light" style={{ cursor: 'default' }}>
                   <td className="py-4 px-3 border-end text-secondary fw-medium">
                     1
+                  </td>
+                  <td className="py-4 px-3 border-end fw-bold" style={{ color: '#164265' }}>
+                    2025-2026
+                  </td>
+                  <td className="py-4 px-3 border-end fw-semibold">
+                    7.58 LPA
+                  </td>
+                  <td className="py-4 px-3 border-end fw-semibold">
+                    90 LPA
+                  </td>
+                  <td className="py-4 px-3 fw-semibold">
+                    <div className="d-flex align-items-center justify-content-center gap-2">
+                      84.76%
+                    </div>
+                  </td>
+                </tr>
+                <tr className="transition-all-300" style={{ cursor: 'default' }}>
+                  <td className="py-4 px-3 border-end text-secondary fw-medium">
+                    2
                   </td>
                   <td className="py-4 px-3 border-end fw-bold" style={{ color: '#164265' }}>
                     2024-2025
@@ -114,25 +133,7 @@ export default function Placement() {
                     </div>
                   </td>
                 </tr>
-                <tr className="transition-all-300 bg-light" style={{ cursor: 'default' }}>
-                  <td className="py-4 px-3 border-end text-secondary fw-medium">
-                    2
-                  </td>
-                  <td className="py-4 px-3 border-end fw-bold" style={{ color: '#164265' }}>
-                    2023-2024
-                  </td>
-                  <td className="py-4 px-3 border-end fw-semibold">
-                    6.15 LPA
-                  </td>
-                  <td className="py-4 px-3 border-end fw-semibold">
-                    60 LPA
-                  </td>
-                  <td className="py-4 px-3 fw-semibold">
-                    <div className="d-flex align-items-center justify-content-center gap-2">
-                      79.24%
-                    </div>
-                  </td>
-                </tr>
+               
               </tbody>
             </table>
           </div>
