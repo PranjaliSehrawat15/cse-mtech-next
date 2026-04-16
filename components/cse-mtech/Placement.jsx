@@ -54,7 +54,7 @@ export default function Placement() {
   ];
 
   return (
-    <section id="placement" className="py-5 bg-white position-relative overflow-hidden">
+    <section id="placement" className="pt-5 bg-white position-relative overflow-hidden">
       <div className="container position-relative z-1 mb-5">
         <div className="text-center mb-5">
           <div className="mb-4 position-relative text-center">
