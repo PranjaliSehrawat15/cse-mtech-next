@@ -34,7 +34,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky-top w-100 bg-white border-bottom border-light z-3 shadow-sm">
+    <header className="sticky-top w-100 bg-white border-bottom border-light shadow-sm" style={{ zIndex: 1030 }}>
       <div className="container">
         <div className="d-flex align-items-center justify-content-between py-3">          
 
