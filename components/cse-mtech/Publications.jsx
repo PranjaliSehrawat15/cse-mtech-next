@@ -65,7 +65,7 @@ export default function Publications() {
       <div className="container">
         {/* Header */}
         <div className="mb-5 text-center position-relative">
-          <h2 className="display-6 fw-bold text-dark mb-2">
+          <h2 className="fs-2 fw-bold text-dark mb-2">
             Publications &amp; Research
           </h2>
           <div className="d-flex justify-content-center mb-3">
@@ -112,7 +112,7 @@ export default function Publications() {
 
         {/* Featured Research */}
         <div className="mb-5 mx-auto card border-0 shadow-sm p-4 p-md-5 bg-white" style={{ maxWidth: '1000px', borderRadius: '16px' }}>
-          <h3 className="h4 fw-bold text-dark mb-4 text-center text-md-start">
+          <h3 className="fs-4 fw-bold text-dark mb-4 text-center text-md-start">
             Recent Research Highlights
           </h3>
           <div className="row g-4">
@@ -170,7 +170,7 @@ export default function Publications() {
             <div className="modal-content border-0 shadow-lg" style={{ borderRadius: '16px' }}>
               {/* Modal Header */}
               <div className="modal-header bg-light border-bottom">
-                <h3 className="modal-title h5 fw-bold text-dark">
+                <h3 className="modal-title fs-5 fw-bold text-dark">
                   Research Details
                 </h3>
                 <button type="button" className="btn-close" onClick={() => setActiveResearch(null)}></button>
@@ -231,7 +231,7 @@ export default function Publications() {
             <div className="modal-content border-0 shadow-lg h-100" style={{ borderRadius: '16px' }}>
               {/* Modal Header */}
               <div className="modal-header bg-light border-bottom">
-                <h3 className="modal-title h6 fw-bold text-dark">
+                <h3 className="modal-title fs-6 fw-bold text-dark">
                   {annualReports.find((r) => r.id === activePdf)?.title}
                 </h3>
                 <button type="button" className="btn-close" onClick={() => setActivePdf(null)}></button>

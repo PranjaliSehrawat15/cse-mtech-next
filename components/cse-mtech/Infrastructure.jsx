@@ -7,7 +7,7 @@ export default function Infrastructure() {
       <div className="container">
         {/* Header */}
         <div className="mb-5 position-relative text-center">
-          <h2 className="display-6 fw-bold text-dark mb-2">
+          <h2 className="fs-2 fw-bold text-dark mb-2">
             Infrastructure &amp; Facilities
           </h2>
           <div className="d-flex justify-content-center">
@@ -22,11 +22,11 @@ export default function Infrastructure() {
           <div className="row align-items-center g-4 g-lg-5">
             <div className="col-lg-6">
               <div className="infra-image-wrapper shadow-sm">
-                 <img src="/assets/Infrastructure/classes.webp" alt="Modern Classrooms" />
+                 <img src="/assets/cse-mtech-assets/Infrastructure/classes.webp" alt="Modern Classrooms" />
               </div>
             </div>
             <div className="col-lg-6 d-flex flex-column justify-content-center">
-               <h3 className="h2 fw-bolder mb-4 lh-sm" style={{ color: '#164265' }}>
+               <h3 className="fs-2 fw-bolder mb-4 lh-sm" style={{ color: '#164265' }}>
                  State-of-the-Art <br/><span style={{ color: '#F26520' }}>Learning Spaces</span>
                </h3>
                <p className="text-secondary mb-4 text-justify" style={{ fontSize: '15px', lineHeight: '1.8' }}>
@@ -49,11 +49,11 @@ export default function Infrastructure() {
           <div className="row flex-lg-row-reverse align-items-center g-4 g-lg-5 mt-3 mt-lg-5">
             <div className="col-lg-6">
               <div className="infra-image-wrapper shadow-sm">
-                 <img src="/assets/Infrastructure/labs.webp" alt="High-Tech Laboratories" />
+                 <img src="/assets/cse-mtech-assets/Infrastructure/labs.webp" alt="High-Tech Laboratories" />
               </div>
             </div>
             <div className="col-lg-6 d-flex flex-column justify-content-center">
-               <h3 className="h2 fw-bolder mb-4 lh-sm" style={{ color: '#164265' }}>
+               <h3 className="fs-2 fw-bolder mb-4 lh-sm" style={{ color: '#164265' }}>
                  Advanced <br/><span style={{ color: '#F26520' }}>Laboratories &amp; HPC</span>
                </h3>
                <p className="text-secondary mb-4 text-justify" style={{ fontSize: '15px', lineHeight: '1.8' }}>

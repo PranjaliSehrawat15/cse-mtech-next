@@ -3,54 +3,54 @@ import React from "react";
 
 export default function Placement() {
   const logos = [
-    "/assets/recruiters/accenture.webp",
-    "/assets/recruiters/adani.webp",
-    "/assets/recruiters/adobe.webp",
-    "/assets/recruiters/airtel.webp",
-    "/assets/recruiters/amazon.webp",
-    "/assets/recruiters/american_express.webp",
-    "/assets/recruiters/atlassian.webp",
-    "/assets/recruiters/axtria.webp",
-    "/assets/recruiters/capegmini.webp",
-    "/assets/recruiters/cisco.webp",
-    "/assets/recruiters/cognizant.webp",
-    "/assets/recruiters/consult_add.webp",
-    "/assets/recruiters/delliolite.webp",
-    "/assets/recruiters/Federal_Bank.webp",
-    "/assets/recruiters/flipkart.webp",
-    "/assets/recruiters/freeCharge.webp",
-    "/assets/recruiters/goldman_sacs.webp",
-    "/assets/recruiters/google.webp",
-    "/assets/recruiters/hcl.webp",
-    "/assets/recruiters/indus_valley.webp",
-    "/assets/recruiters/infosys.webp",
-    "/assets/recruiters/innovacer.webp",
-    "/assets/recruiters/jfg.webp",
-    "/assets/recruiters/jpmorgan.webp",
-    "/assets/recruiters/juspay.webp",
-    "/assets/recruiters/jsw.webp",
-    "/assets/recruiters/lutron.webp",
-    "/assets/recruiters/mamaearth.webp",
-    "/assets/recruiters/maq_software.webp",
-    "/assets/recruiters/microsoft.webp",
-    "/assets/recruiters/myntra.webp",
-    "/assets/recruiters/new_gen.webp",
-    "/assets/recruiters/nokia.webp",
-    "/assets/recruiters/procdna.webp",
-    "/assets/recruiters/rapipay.webp",
-    "/assets/recruiters/samsung.webp",
-    "/assets/recruiters/servuc_now.webp",
-    "/assets/recruiters/sopra_steria.webp",
-    "/assets/recruiters/tCamp.webp",
-    "/assets/recruiters/tcs.webp",
-    "/assets/recruiters/tech_mahindra.webp",
-    "/assets/recruiters/tejas.webp",
-    "/assets/recruiters/torrent.webp",
-    "/assets/recruiters/ui_path.webp",
-    "/assets/recruiters/ukg.webp",
-    "/assets/recruiters/unilever.webp",
-    "/assets/recruiters/unthinkable.webp",
-    "/assets/recruiters/wipro.webp",
+    "/assets/cse-mtech-assets/recruiters/accenture.webp",
+    "/assets/cse-mtech-assets/recruiters/adani.webp",
+    "/assets/cse-mtech-assets/recruiters/adobe.webp",
+    "/assets/cse-mtech-assets/recruiters/airtel.webp",
+    "/assets/cse-mtech-assets/recruiters/amazon.webp",
+    "/assets/cse-mtech-assets/recruiters/american_express.webp",
+    "/assets/cse-mtech-assets/recruiters/atlassian.webp",
+    "/assets/cse-mtech-assets/recruiters/axtria.webp",
+    "/assets/cse-mtech-assets/recruiters/capegmini.webp",
+    "/assets/cse-mtech-assets/recruiters/cisco.webp",
+    "/assets/cse-mtech-assets/recruiters/cognizant.webp",
+    "/assets/cse-mtech-assets/recruiters/consult_add.webp",
+    "/assets/cse-mtech-assets/recruiters/delliolite.webp",
+    "/assets/cse-mtech-assets/recruiters/Federal_Bank.webp",
+    "/assets/cse-mtech-assets/recruiters/flipkart.webp",
+    "/assets/cse-mtech-assets/recruiters/freeCharge.webp",
+    "/assets/cse-mtech-assets/recruiters/goldman_sacs.webp",
+    "/assets/cse-mtech-assets/recruiters/google.webp",
+    "/assets/cse-mtech-assets/recruiters/hcl.webp",
+    "/assets/cse-mtech-assets/recruiters/indus_valley.webp",
+    "/assets/cse-mtech-assets/recruiters/infosys.webp",
+    "/assets/cse-mtech-assets/recruiters/innovacer.webp",
+    "/assets/cse-mtech-assets/recruiters/jfg.webp",
+    "/assets/cse-mtech-assets/recruiters/jpmorgan.webp",
+    "/assets/cse-mtech-assets/recruiters/juspay.webp",
+    "/assets/cse-mtech-assets/recruiters/jsw.webp",
+    "/assets/cse-mtech-assets/recruiters/lutron.webp",
+    "/assets/cse-mtech-assets/recruiters/mamaearth.webp",
+    "/assets/cse-mtech-assets/recruiters/maq_software.webp",
+    "/assets/cse-mtech-assets/recruiters/microsoft.webp",
+    "/assets/cse-mtech-assets/recruiters/myntra.webp",
+    "/assets/cse-mtech-assets/recruiters/new_gen.webp",
+    "/assets/cse-mtech-assets/recruiters/nokia.webp",
+    "/assets/cse-mtech-assets/recruiters/procdna.webp",
+    "/assets/cse-mtech-assets/recruiters/rapipay.webp",
+    "/assets/cse-mtech-assets/recruiters/samsung.webp",
+    "/assets/cse-mtech-assets/recruiters/servuc_now.webp",
+    "/assets/cse-mtech-assets/recruiters/sopra_steria.webp",
+    "/assets/cse-mtech-assets/recruiters/tCamp.webp",
+    "/assets/cse-mtech-assets/recruiters/tcs.webp",
+    "/assets/cse-mtech-assets/recruiters/tech_mahindra.webp",
+    "/assets/cse-mtech-assets/recruiters/tejas.webp",
+    "/assets/cse-mtech-assets/recruiters/torrent.webp",
+    "/assets/cse-mtech-assets/recruiters/ui_path.webp",
+    "/assets/cse-mtech-assets/recruiters/ukg.webp",
+    "/assets/cse-mtech-assets/recruiters/unilever.webp",
+    "/assets/cse-mtech-assets/recruiters/unthinkable.webp",
+    "/assets/cse-mtech-assets/recruiters/wipro.webp",
   ];
 
   return (
@@ -58,7 +58,7 @@ export default function Placement() {
       <div className="container position-relative z-1 mb-5">
         <div className="text-center mb-5">
           <div className="mb-4 position-relative text-center">
-            <h2 className="display-6 fw-bold text-dark mb-2">
+            <h2 className="fs-2 fw-bold text-dark mb-2">
               Placement Statistics
             </h2>
             <div className="d-flex justify-content-center">
@@ -142,7 +142,7 @@ export default function Placement() {
 
       <div className="position-relative z-1 w-100 mb-5">
         <div className="text-center mb-4">
-          <h2 className="h2 fw-bold mb-2" style={{ color: '#164265' }}>
+          <h2 className="fs-2 fw-bold mb-2" style={{ color: '#164265' }}>
             Our Top Recruiters
           </h2>
           <div className="rounded-pill mx-auto" style={{ width: '4rem', height: '0.25rem', backgroundColor: '#F26520' }}></div>
