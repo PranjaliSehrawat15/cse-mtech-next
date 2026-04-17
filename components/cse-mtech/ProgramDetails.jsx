@@ -11,7 +11,7 @@ export default function ProgramDetails() {
 
         {/* Header */}
         <div className="mb-5 position-relative text-center">
-          <h2 className="display-6 fw-bold text-dark mb-2">
+          <h2 className="fs-2 fw-bold text-dark mb-2">
             Program Details
           </h2>
           <div className="d-flex justify-content-center">
@@ -26,7 +26,7 @@ export default function ProgramDetails() {
           <div className="col-lg-6">
             <div className="card h-100 border-0 bg-white rounded-4 p-4 p-md-5 shadow-sm vm-card">
               <div className="d-flex align-items-center mb-4">
-                <h3 className="h3 fw-bold mb-0" style={{ color: '#164265' }}>Vision</h3>
+                <h3 className="fs-3 fw-bold mb-0" style={{ color: '#164265' }}>Vision</h3>
               </div>
               <ul className="list-unstyled text-secondary m-0 position-relative z-1 d-flex flex-column gap-3">
                 {[
@@ -36,7 +36,7 @@ export default function ProgramDetails() {
                 ].map((item, idx) => (
                   <li key={idx} className="d-flex align-items-start">
                     <span className="rounded-circle flex-shrink-0 mt-2 me-3" style={{ width: '0.5rem', height: '0.5rem', backgroundColor: '#F26520' }}></span>
-                    <span className="text-justify lh-base" style={{ fontSize: '1rem' }}>{item}</span>
+                    <span className="text-justify lh-base fs-6">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -47,7 +47,7 @@ export default function ProgramDetails() {
           <div className="col-lg-6">
             <div className="card h-100 border-0 bg-white rounded-4 p-4 p-md-5 shadow-sm vm-card">
               <div className="d-flex align-items-center mb-4">
-                <h3 className="h3 fw-bold mb-0" style={{ color: '#164265' }}>Mission</h3>
+                <h3 className="fs-3 fw-bold mb-0" style={{ color: '#164265' }}>Mission</h3>
               </div>
               <ul className="list-unstyled text-secondary m-0 position-relative z-1 d-flex flex-column gap-3">
                 {[
@@ -58,7 +58,7 @@ export default function ProgramDetails() {
                 ].map((item, idx) => (
                   <li key={idx} className="d-flex align-items-start">
                     <span className="rounded-circle flex-shrink-0 mt-2 me-3" style={{ width: '0.5rem', height: '0.5rem', backgroundColor: '#F26520' }}></span>
-                    <span className="text-justify lh-base" style={{ fontSize: '1rem' }}>{item}</span>
+                    <span className="text-justify lh-base fs-6">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -72,7 +72,7 @@ export default function ProgramDetails() {
           <div className="col-lg-12">
             <div className="card border-0 bg-white rounded-4 p-4 p-md-5 shadow-sm vm-card">
               <div className="d-flex align-items-center mb-4">
-                <h3 className="h3 fw-bold mb-0" style={{ color: '#164265' }}>Program Outcomes</h3>
+                <h3 className="fs-3 fw-bold mb-0" style={{ color: '#164265' }}>Program Outcomes</h3>
               </div>
               <ul className="list-unstyled text-secondary m-0 position-relative z-1 d-flex flex-column gap-3">
                 {[
@@ -82,7 +82,7 @@ export default function ProgramDetails() {
                 ].map((item, idx) => (
                   <li key={idx} className="d-flex align-items-start">
                     <span className="rounded-circle flex-shrink-0 mt-2 me-3" style={{ width: '0.5rem', height: '0.5rem', backgroundColor: '#F26520' }}></span>
-                    <span className="text-justify lh-base" style={{ fontSize: '1rem' }}>{item}</span>
+                    <span className="text-justify lh-base fs-6">{item}</span>
                   </li>
                 ))}
               </ul>

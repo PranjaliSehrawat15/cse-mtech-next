@@ -9,7 +9,7 @@ export default function COE() {
     {
       id: 'ios-lab',
       title: 'Apple certified ios development Lab',
-      image: '/assets/coe/AppleLab.png',
+      image: '/assets/cse-mtech-assets/coe/AppleLab.png',
       description:
         'The Apple certified ios development Lab is a state-of-the-art innovation space dedicated to building world-class applications for the Apple ecosystem. Equipped with modern Mac systems, the lab enables students to master Swift, UIKit/SwiftUI, and end-to-end app development.',
       detail:
@@ -31,7 +31,7 @@ export default function COE() {
     {
       id: 'dgx-centre',
       title: 'Supercomputing with DGX',
-      image: '/assets/coe/dgx-supercomputer.png',
+      image: '/assets/cse-mtech-assets/coe/dgx-supercomputer.png',
       description:
         'Powered by the NVIDIA DGX A100, this Centre of Excellence brings enterprise-level AI infrastructure directly to students. It enables training of large-scale deep learning models and real-time AI deployment.',
       detail:
@@ -53,7 +53,7 @@ export default function COE() {
     {
       id: 'param-shavak',
       title: 'PARAM Shavak HPC Lab',
-      image: '/assets/coe/ParamShavak.jpg',
+      image: '/assets/cse-mtech-assets/coe/ParamShavak.jpg',
       description:
         'The PARAM Shavak supercomputer, developed by C-DAC, empowers students with hands-on experience in high-performance computing and parallel processing.',
       detail:
@@ -95,7 +95,6 @@ export default function COE() {
           margin-bottom: 3rem;
         }
         .coe-header h2 {
-          font-size: clamp(2rem, 5vw, 3rem);
           font-weight: 800;
           color: #164265;
           margin-bottom: 1rem;
@@ -110,7 +109,6 @@ export default function COE() {
         }
         .coe-header p {
           color: #6b7280;
-          font-size: 1.05rem;
           max-width: 38rem;
           margin: 0 auto;
           line-height: 1.65;
@@ -181,7 +179,6 @@ export default function COE() {
         }
 
         .coe-card-title {
-          font-size: 1.35rem;
           font-weight: 800;
           color: #164265;
           margin-bottom: 0.85rem;
@@ -190,14 +187,12 @@ export default function COE() {
         }
         .coe-card-desc {
           color: #4b5563;
-          font-size: 14px;
           line-height: 1.65;
           margin-bottom: 0.5rem;
           text-align: justify;
         }
         .coe-card-detail {
           color: #6b7280;
-          font-size: 14px;
           line-height: 1.6;
           margin-bottom: 1.15rem;
           text-align: justify;
@@ -218,7 +213,6 @@ export default function COE() {
           flex: 1;
         }
         .coe-stat-val {
-          font-size: 1.2rem;
           font-weight: 800;
           display: block;
           margin-bottom: 0.15rem;
@@ -329,9 +323,9 @@ export default function COE() {
 
       <div className="coe-container">
         <div className="coe-header">
-          <h2>Centres of Excellence</h2>
+          <h2 className="fs-1">Centres of Excellence</h2>
           <div className="coe-header-bar"></div>
-          <p>
+          <p className="fs-6">
             World-class facilities empowering students with cutting-edge technology
             and industry-grade infrastructure.
           </p>
@@ -364,7 +358,7 @@ export default function COE() {
 
 
 
-                <h3 className="coe-card-title">{centre.title}</h3>
+                <h3 className="coe-card-title fs-4">{centre.title}</h3>
                 <p className="coe-card-desc">{centre.description}</p>
                 <p className="coe-card-detail">{centre.detail}</p>
 
@@ -372,7 +366,7 @@ export default function COE() {
                 <div className="coe-stats">
                   {centre.stats.map((s) => (
                     <div className="coe-stat" key={s.label}>
-                      <span className="coe-stat-val" style={{ color: centre.accentColor }}>
+                      <span className="coe-stat-val fs-5" style={{ color: centre.accentColor }}>
                         {s.value}
                       </span>
                       <span className="coe-stat-lbl">{s.label}</span>

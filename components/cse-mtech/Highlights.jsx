@@ -9,42 +9,42 @@ export default function Highlights() {
       title: 'Strong Industry Connect & Collaboration',
       description:
         'The department maintains a robust industry ecosystem, connecting students with leading tech companies, startups, and R&D organizations. Through internships, live projects, expert talks, and mentorship, students gain real-world exposure, making them industry-ready and highly employable from day one.',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?fit=crop&w=400&h=400&q=80',
+      image: '/assets/cse-mtech-assets/Highlights/industry_connect.webp',
     },
     {
       id: 2,
       title: 'Curriculum Highlights',
       description:
         'The M.Tech (CSE) curriculum is designed to deliver a perfect blend of strong fundamentals, emerging technologies, and real-world application. Students build expertise in core areas like Data Structures, DBMS, and Software Engineering, while advancing into AI, Machine Learning, Blockchain, and Quantum Computing.',
-      image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?fit=crop&w=400&h=400&q=80',
+      image: '/assets/cse-mtech-assets/Highlights/curriculum_highlights.webp',
     },
     {
       id: 3,
       title: 'Outstanding Placements',
       description:
         'Our graduates secure highly competitive roles at top multinational companies and promising startups. With dedicated placement cell support, rigorous interview preparation, and skill enhancement programs, we ensure a smooth transition from academics to successful professional careers.',
-      image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?fit=crop&w=400&h=400&q=80',
+      image: '/assets/cse-mtech-assets/Highlights/placement.webp',
     },
     {
       id: 4,
       title: 'Cutting-Edge Research',
       description:
         'Engage in groundbreaking research across specialized domains like AI, Data Science, and Cyber Security. We provide extensive support for publishing in reputed journals, participating in international conferences, and collaborating on government-funded and industry-sponsored projects.',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?fit=crop&w=400&h=400&q=80',
+      image: '/assets/cse-mtech-assets/Highlights/research.webp',
     },
     {
       id: 5,
       title: 'State-of-the-art Infrastructure',
       description:
         'Experience learning in world-class facilities equipped with high-end computing laboratories, smart classrooms, and collaborative workspaces. Our advanced labs are powered by the latest software and hardware to support intensive computing tasks and complex project developments.',
-      image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?fit=crop&w=400&h=400&q=80',
+      image: '/assets/cse-mtech-assets/Highlights/infrastructure.webp',
     },
     {
       id: 6,
       title: 'Best Results & Academic Excellence',
       description:
         'Our students consistently top university examinations and secure prestigious awards. This legacy of academic brilliance is driven by experienced faculty, continuous evaluations, and a learning environment that encourages analytical thinking and problem-solving.',
-      image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?fit=crop&w=400&h=400&q=80',
+      image: '/assets/cse-mtech-assets/Highlights/academic_excellence.webp',
     },
   ];
 
@@ -65,7 +65,7 @@ export default function Highlights() {
       <div className="container">
         {/* Program Highlights Section */}
         <div className="mb-5 text-center">
-          <h2 className="display-6 fw-bold text-dark mb-2">
+          <h2 className="fs-2 fw-bold text-dark mb-2">
             Program Highlights
           </h2>
           <div className="d-flex justify-content-center mb-4">
@@ -96,7 +96,7 @@ export default function Highlights() {
 
         {/* Department Highlights Header */}
         <div className="mb-5 text-center">
-          <h2 className="display-6 fw-bold text-dark mb-2">
+          <h2 className="fs-2 fw-bold text-dark mb-2">
             Department&apos;s Highlights
           </h2>
           <div className="d-flex justify-content-center">
@@ -121,7 +121,7 @@ export default function Highlights() {
 
                   {/* Content */}
                   <div className="flex-grow-1">
-                    <h3 className="h5 fw-bold text-dark mb-2">
+                    <h3 className="fs-5 fw-bold text-dark mb-2">
                       {highlight.title}
                     </h3>
                     <p className="small text-secondary mb-0" style={{ textAlign: 'justify' }}>
@@ -136,7 +136,7 @@ export default function Highlights() {
 
         {/* Why Choose Our Program */}
         <div className="mt-5 pt-5 text-center">
-          <h3 className="h3 fw-bold text-dark mb-4">
+          <h3 className="fs-3 fw-bold text-dark mb-4">
             Why Choose Our Program?
           </h3>
           <div className="row g-4 mt-2">
@@ -156,10 +156,10 @@ export default function Highlights() {
             ].map((stat, index) => (
               <div key={index} className="col-md-4">
                 <div className="card border-0 shadow-sm p-5 rounded-4 h-100 why-choose-card">
-                  <p className="display-4 fw-bold mb-3" style={{ color: '#F26520' }}>
+                  <p className="fs-1 fw-bold mb-3" style={{ color: '#F26520' }}>
                     {stat.number}
                   </p>
-                  <p className="h5 text-dark fw-bold mb-0">{stat.label}</p>
+                  <p className="fs-5 text-dark fw-bold mb-0">{stat.label}</p>
                 </div>
               </div>
             ))}

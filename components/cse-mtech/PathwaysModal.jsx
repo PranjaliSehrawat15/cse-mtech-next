@@ -15,7 +15,7 @@ export default function PathwaysModal({ open, onClose, pathway }) {
             {/* Header Section */}
             <div className="modal-header border-bottom p-4">
               <div className="w-100 pe-3">
-                <h2 className="modal-title h3 fw-bold text-dark mb-2">
+                <h2 className="modal-title fs-3 fw-bold text-dark mb-2">
                   {pathway.title}
                 </h2>
                 <p className="text-secondary fw-medium fs-5 mb-2">
@@ -37,7 +37,7 @@ export default function PathwaysModal({ open, onClose, pathway }) {
             {/* Curriculum Flow Section */}
             <div className="modal-body p-4 bg-white">
               <h3 
-                className="h4 fw-bold mb-4 pb-2 border-bottom"
+                className="fs-4 fw-bold mb-4 pb-2 border-bottom"
                 style={{ borderBottomColor: pathway.color + ' !important', borderBottomWidth: '2px !important', color: '#1F2937' }}
               >
                 Complete Curriculum Flow
@@ -62,7 +62,7 @@ export default function PathwaysModal({ open, onClose, pathway }) {
                           {section.semester}
                         </span>
                         <h4 
-                          className="h5 fw-bold mb-0"
+                          className="fs-5 fw-bold mb-0"
                           style={{ color: pathway.color }}
                         >
                           {section.phase}

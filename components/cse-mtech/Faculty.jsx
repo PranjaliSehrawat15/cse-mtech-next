@@ -10,66 +10,66 @@ const normalizeKey = (value) =>
     .replace(/[^a-z]/g, "");
 
 const imageByKey = {
-  amansrivastav: "/assets/images/Aman_Srivastav_21780-removebg-preview.png",
-  anikeshkumar: "/assets/images/Anikesh_Kumar_21879-removebg-preview.png",
-  anikesh: "/assets/images/Anikesh_Kumar_21879-removebg-preview.png",
-  anshumankalia: "/assets/images/Anshuman_Kalia_21647-removebg-preview.png",
-  bharti: "/assets/images/Bharti_21325-removebg-preview.png",
-  deeptisingh: "/assets/images/Deepti_Singh_21456-removebg-preview.png",
-  ankurbhardwaj: "/assets/images/Dr._Ankur_Bhardwaj_8172-removebg-preview.png",
+  amansrivastav: "/assets/cse-mtech-assets/images/Aman_Srivastav_21780-removebg-preview.png",
+  anikeshkumar: "/assets/cse-mtech-assets/images/Anikesh_Kumar_21879-removebg-preview.png",
+  anikesh: "/assets/cse-mtech-assets/images/Anikesh_Kumar_21879-removebg-preview.png",
+  anshumankalia: "/assets/cse-mtech-assets/images/Anshuman_Kalia_21647-removebg-preview.png",
+  bharti: "/assets/cse-mtech-assets/images/Bharti_21325-removebg-preview.png",
+  deeptisingh: "/assets/cse-mtech-assets/images/Deepti_Singh_21456-removebg-preview.png",
+  ankurbhardwaj: "/assets/cse-mtech-assets/images/Dr._Ankur_Bhardwaj_8172-removebg-preview.png",
   dilkeshwarpandey:
-    "/assets/images/Dr._Dilkeshwar_Pandey_21018-removebg-preview.png",
+    "/assets/cse-mtech-assets/images/Dr._Dilkeshwar_Pandey_21018-removebg-preview.png",
   himanshichaudhary:
-    "/assets/images/Dr._Himanshi_Chaudhary_20975-removebg-preview.png",
-  madhugautam: "/assets/images/Dr._Madhu_Gautam_21036-removebg-preview.png",
-  nehayadav: "/assets/images/Dr._Neha_Yadav_9356-removebg-preview.png",
-  paritajain: "/assets/images/Dr._Parita_Jain_12075-removebg-preview.png",
+    "/assets/cse-mtech-assets/images/Dr._Himanshi_Chaudhary_20975-removebg-preview.png",
+  madhugautam: "/assets/cse-mtech-assets/images/Dr._Madhu_Gautam_21036-removebg-preview.png",
+  nehayadav: "/assets/cse-mtech-assets/images/Dr._Neha_Yadav_9356-removebg-preview.png",
+  paritajain: "/assets/cse-mtech-assets/images/Dr._Parita_Jain_12075-removebg-preview.png",
   pranaymadhukarmeshram:
-    "/assets/images/Dr._Pranay_Madhukar_Meshram_21717-removebg-preview.png",
-  preetigarg: "/assets/images/Dr._Preeti_Garg_21073-removebg-preview.png",
-  seemamaitrey: "/assets/images/Dr._Seema_Maitrey_5248-removebg-preview.png",
-  swatisharma: "/assets/images/Dr._Swati_Sharma_6095-removebg-preview.png",
-  upendramishra: "/assets/images/Dr._Upendra_Mishra_21138-removebg-preview.png",
-  vineetsharma: "/assets/images/Dr._Vineet_Sharma_4478-removebg-preview.png",
+    "/assets/cse-mtech-assets/images/Dr._Pranay_Madhukar_Meshram_21717-removebg-preview.png",
+  preetigarg: "/assets/cse-mtech-assets/images/Dr._Preeti_Garg_21073-removebg-preview.png",
+  seemamaitrey: "/assets/cse-mtech-assets/images/Dr._Seema_Maitrey_5248-removebg-preview.png",
+  swatisharma: "/assets/cse-mtech-assets/images/Dr._Swati_Sharma_6095-removebg-preview.png",
+  upendramishra: "/assets/cse-mtech-assets/images/Dr._Upendra_Mishra_21138-removebg-preview.png",
+  vineetsharma: "/assets/cse-mtech-assets/images/Dr._Vineet_Sharma_4478-removebg-preview.png",
   vineetkumarsharma:
-    "/assets/images/Dr._Vineet_Sharma_4478-removebg-preview.png",
-  gaganthakral: "/assets/images/Gagan_Thakral_21395-removebg-preview.png",
-  gauravparashar: "/assets/images/Gaurav_Parashar_21081-removebg-preview.png",
-  harshmodi: "/assets/images/Harsh_Modi_21650-removebg-preview.png",
-  maitree: "/assets/images/Maitree_21779-removebg-preview.png",
-  manidwivedi: "/assets/images/Mani_Dwivedi_21429-removebg-preview.png",
-  mohittanwar: "/assets/images/Mohit_Tanwar_21781-removebg-preview.png",
+    "/assets/cse-mtech-assets/images/Dr._Vineet_Sharma_4478-removebg-preview.png",
+  gaganthakral: "/assets/cse-mtech-assets/images/Gagan_Thakral_21395-removebg-preview.png",
+  gauravparashar: "/assets/cse-mtech-assets/images/Gaurav_Parashar_21081-removebg-preview.png",
+  harshmodi: "/assets/cse-mtech-assets/images/Harsh_Modi_21650-removebg-preview.png",
+  maitree: "/assets/cse-mtech-assets/images/Maitree_21779-removebg-preview.png",
+  manidwivedi: "/assets/cse-mtech-assets/images/Mani_Dwivedi_21429-removebg-preview.png",
+  mohittanwar: "/assets/cse-mtech-assets/images/Mohit_Tanwar_21781-removebg-preview.png",
   nandkishoryadav:
-    "/assets/images/Nand_Kishor_Yadav_21838-removebg-preview.png",
-  navdeshsingh: "/assets/images/Navdesh_Singh-removebg-preview.png",
-  neetipahuja: "/assets/images/Neeti_Pahuja_21774-removebg-preview.png",
-  nishugupta: "/assets/images/Nishu_Gupta.png",
-  nitinkumar: "/assets/images/Nitin_Kumar_21908-removebg-preview.png",
+    "/assets/cse-mtech-assets/images/Nand_Kishor_Yadav_21838-removebg-preview.png",
+  navdeshsingh: "/assets/cse-mtech-assets/images/Navdesh_Singh-removebg-preview.png",
+  neetipahuja: "/assets/cse-mtech-assets/images/Neeti_Pahuja_21774-removebg-preview.png",
+  nishugupta: "/assets/cse-mtech-assets/images/Nishu_Gupta.png",
+  nitinkumar: "/assets/cse-mtech-assets/images/Nitin_Kumar_21908-removebg-preview.png",
   omprakashkushwaha:
-    "/assets/images/Omprakash_Kushwaha_21641-removebg-preview.png",
-  pavansharma: "/assets/images/Pavan_Sharma_21681-removebg-preview.png",
-  prabhjotkaur: "/assets/images/Prabhjotkaur_21831-removebg-preview.png",
-  pramodnath: "/assets/images/Pramod_Nath_21899-removebg-preview.png",
-  pushpendrakumar: "/assets/images/Pushpendra_Kumar_21326-removebg-preview.png",
+    "/assets/cse-mtech-assets/images/Omprakash_Kushwaha_21641-removebg-preview.png",
+  pavansharma: "/assets/cse-mtech-assets/images/Pavan_Sharma_21681-removebg-preview.png",
+  prabhjotkaur: "/assets/cse-mtech-assets/images/Prabhjotkaur_21831-removebg-preview.png",
+  pramodnath: "/assets/cse-mtech-assets/images/Pramod_Nath_21899-removebg-preview.png",
+  pushpendrakumar: "/assets/cse-mtech-assets/images/Pushpendra_Kumar_21326-removebg-preview.png",
   rahulkumarsharma:
-    "/assets/images/Rahul_Kumar_Sharma_21380-removebg-preview.png",
+    "/assets/cse-mtech-assets/images/Rahul_Kumar_Sharma_21380-removebg-preview.png",
   rajanishkumarjain:
-    "/assets/images/Rajanish_Kumar_Jain_21777-removebg-preview.png",
-  ravitomer: "/assets/images/Ravi_Tomer_16824-removebg-preview.png",
+    "/assets/cse-mtech-assets/images/Rajanish_Kumar_Jain_21777-removebg-preview.png",
+  ravitomer: "/assets/cse-mtech-assets/images/Ravi_Tomer_16824-removebg-preview.png",
   rishabhsinghrathore:
-    "/assets/images/Rishabh_Singh_Rathore_21877-removebg-preview.png",
+    "/assets/cse-mtech-assets/images/Rishabh_Singh_Rathore_21877-removebg-preview.png",
   rishabsinghrathore:
-    "/assets/images/Rishabh_Singh_Rathore_21877-removebg-preview.png",
-  sandeepkumar: "/assets/images/Sandeep_Kumar_9301-removebg-preview.png",
-  sauravchandra: "/assets/images/Saurav_Chandra_21113-removebg-preview.png",
-  soniaverma: "/assets/images/Sonia_Verma_21906-removebg-preview.png",
-  surbhijain: "/assets/images/Surbhi_Jain_21778-removebg-preview.png",
-  umangrastogi: "/assets/images/Umang_Rastogi_21105-removebg-preview.png",
-  vaibhawkori: "/assets/images/Vaibhaw_Kori_21824-removebg-preview.png",
-  vipindeval: "/assets/images/Vipin_Deval_21104-removebg-preview.png",
-  yogendrapal: "/assets/images/Yogendra_Pal_21645-removebg-preview.png",
-  jaskiratsingh: "/assets/images/jaskirat_singh.png",
-  riturai: "/assets/images/ritu-removebg-preview(3).png",
+    "/assets/cse-mtech-assets/images/Rishabh_Singh_Rathore_21877-removebg-preview.png",
+  sandeepkumar: "/assets/cse-mtech-assets/images/Sandeep_Kumar_9301-removebg-preview.png",
+  sauravchandra: "/assets/cse-mtech-assets/images/Saurav_Chandra_21113-removebg-preview.png",
+  soniaverma: "/assets/cse-mtech-assets/images/Sonia_Verma_21906-removebg-preview.png",
+  surbhijain: "/assets/cse-mtech-assets/images/Surbhi_Jain_21778-removebg-preview.png",
+  umangrastogi: "/assets/cse-mtech-assets/images/Umang_Rastogi_21105-removebg-preview.png",
+  vaibhawkori: "/assets/cse-mtech-assets/images/Vaibhaw_Kori_21824-removebg-preview.png",
+  vipindeval: "/assets/cse-mtech-assets/images/Vipin_Deval_21104-removebg-preview.png",
+  yogendrapal: "/assets/cse-mtech-assets/images/Yogendra_Pal_21645-removebg-preview.png",
+  jaskiratsingh: "/assets/cse-mtech-assets/images/jaskirat_singh.png",
+  riturai: "/assets/cse-mtech-assets/images/ritu-removebg-preview(3).png",
 };
 
 const facultyMembers = [
@@ -480,7 +480,7 @@ function FacultyCard({ faculty }) {
 
       <div className="card-body flex-grow-1 d-flex flex-column align-items-center text-center px-2 pt-2 pb-2 bg-white rounded-bottom-4">
         <h4
-          className="h6 fw-bold mb-1 lh-sm w-100 text-truncate"
+          className="fs-6 fw-bold mb-1 lh-sm w-100 text-truncate"
           style={{ color: "#164265", fontSize: "0.82rem" }}
         >
           {faculty.name}
@@ -617,7 +617,7 @@ export default function Faculty() {
       `}</style>
       <div className="container text-center">
         <div className="mb-5 position-relative">
-          <h2 className="display-6 fw-bold text-dark mb-2">Faculty</h2>
+          <h2 className="fs-2 fw-bold text-dark mb-2">Faculty</h2>
           <div className="d-flex justify-content-center">
             <div
               className="rounded-pill"

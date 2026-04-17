@@ -12,7 +12,7 @@ export default function Clubs() {
       description:
         "The Google Developer Groups (GDG) at KIET, Ghaziabad is a dynamic, student-driven technical community dedicated to empowering learners through hands-on skills, innovation, and real-world problem-solving. Supported by Google Developers, the club provides a platform for students to explore emerging technologies such as web development, Android, cloud computing, machine learning, and AI. It conducts workshops, hackathons, coding sessions, and project-based learning activities to bridge the gap between academic knowledge and industry requirements. GDG KIET encourages collaboration, creativity, and leadership, helping students build strong technical portfolios while contributing to impactful community solutions and preparing them for future technological careers.",
       tags: ["Web", "Android", "Cloud"],
-      image: "/assets/clubs/gdg.webp",
+      image: "/assets/cse-mtech-assets/clubs/gdg.webp",
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ export default function Clubs() {
       description:
         "The Data Science and Deep Learning (DSDL) Club, guided by Dr. Vineet Sharma, is a vibrant student community committed to fostering excellence in AI, machine learning, and data-driven innovation. The club provides a platform for students to explore data science concepts, build intelligent systems, and apply deep learning techniques to real-world problems. Through hands-on workshops, industrial collaborations, research initiatives, and peer learning, DSDL enhances analytical thinking and technical expertise. The club nurtures curiosity, creativity, and teamwork, empowering students to become future-ready professionals capable of contributing impactful solutions in academia, industry, and society.",
       tags: ["Machine Learning", "AI", "Deep Learning"],
-      image: "/assets/clubs/dsdl.webp",
+      image: "/assets/cse-mtech-assets/clubs/dsdl.webp",
     },
     {
       id: 3,
@@ -28,14 +28,14 @@ export default function Clubs() {
       description:
         "Microsoft Learn Student Ambassadors (MLSA), KIET Ghaziabad is a student-led, innovation-focused community dedicated to building strong technical and leadership skills. Guided by experienced faculty and leadership, it offers hands-on learning through workshops, hackathons, mentorship programs, and expert sessions across domains like Cloud Computing, AI/ML, Web Development, Cybersecurity, and DevOps.Fostering collaboration, peer learning, and real-world exposure, MLSA KIET serves as a vibrant platform for innovation and prepares students to excel in the evolving tech industry.",
       tags: ["Azure", "Leadership", "Hackathons"],
-      image: "/assets/clubs/mlsa.webp",
+      image: "/assets/cse-mtech-assets/clubs/mlsa.webp",
     },
     {
       id: 4,
       name: "FOSSCU (Open Source)",
       description: "FOSSCU (Free and Open Source Software Community), KIET Ghaziabad is a student-led initiative dedicated to promoting open-source culture, collaboration, and innovation. The community encourages students to contribute to real-world projects, enhance their coding skills, and understand the power of open technologies. Through workshops, contribution drives, and peer learning, FOSSCU empowers students to build, share, and grow while making meaningful contributions to the global open-source ecosystem",
       tags: ["Open Source", "Git", "Collaboration"],
-      image: "/assets/clubs/fosscu.webp",
+      image: "/assets/cse-mtech-assets/clubs/fosscu.webp",
     },
   ];
 
@@ -44,7 +44,7 @@ export default function Clubs() {
       <div className="container">
         {/* Header */}
         <div className="mb-5 text-center position-relative">
-          <h2 className="display-6 fw-bold text-dark mb-2">
+          <h2 className="fs-2 fw-bold text-dark mb-2">
             Clubs
           </h2>
           <div className="d-flex justify-content-center">
@@ -83,7 +83,7 @@ export default function Clubs() {
 
                     {/* Content Box */}
                     <div className="card-body d-flex flex-column">
-                      <h3 className="h6 fw-bold text-dark mb-3">
+                      <h3 className="fs-6 fw-bold text-dark mb-3">
                         {club.name}
                       </h3>
                       {/* Explore Button */}
@@ -118,7 +118,7 @@ export default function Clubs() {
               ></button>
 
               <div className="modal-body p-5 d-flex flex-column align-items-center text-center">
-                <h2 className="h3 fw-bold mb-4" style={{ color: '#164265' }}>
+                <h2 className="fs-3 fw-bold mb-4" style={{ color: '#164265' }}>
                   {selectedClub.name}
                 </h2>
 
@@ -130,7 +130,7 @@ export default function Clubs() {
                   ))}
                 </div>
 
-                <p className="text-secondary lh-lg mb-5" style={{ fontSize: '1rem', maxWidth: '36rem' }}>
+                <p className="text-secondary lh-lg mb-5 fs-6" style={{ maxWidth: '36rem' }}>
                   {selectedClub.description}
                 </p>
 
