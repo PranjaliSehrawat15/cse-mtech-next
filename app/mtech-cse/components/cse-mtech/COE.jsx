@@ -9,7 +9,7 @@ export default function COE() {
     {
       id: 'ios-lab',
       title: 'Apple certified ios development Lab',
-      image: '/assets/cse-mtech-assets/coe/AppleLab.png',
+      image: '/cse-mtech-assets/coe/AppleLab.png',
       description:
         'The Apple certified ios development Lab is a state-of-the-art innovation space dedicated to building world-class applications for the Apple ecosystem. Equipped with modern Mac systems, the lab enables students to master Swift, UIKit/SwiftUI, and end-to-end app development.',
       detail:
@@ -31,7 +31,7 @@ export default function COE() {
     {
       id: 'dgx-centre',
       title: 'Supercomputing with DGX',
-      image: '/assets/cse-mtech-assets/coe/dgx-supercomputer.png',
+      image: '/cse-mtech-assets/coe/dgx-supercomputer.png',
       description:
         'Powered by the NVIDIA DGX A100, this Centre of Excellence brings enterprise-level AI infrastructure directly to students. It enables training of large-scale deep learning models and real-time AI deployment.',
       detail:
@@ -53,7 +53,7 @@ export default function COE() {
     {
       id: 'param-shavak',
       title: 'PARAM Shavak HPC Lab',
-      image: '/assets/cse-mtech-assets/coe/ParamShavak.jpg',
+      image: '/cse-mtech-assets/coe/ParamShavak.jpg',
       description:
         'The PARAM Shavak supercomputer, developed by C-DAC, empowers students with hands-on experience in high-performance computing and parallel processing.',
       detail:

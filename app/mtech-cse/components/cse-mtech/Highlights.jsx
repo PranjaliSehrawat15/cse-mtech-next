@@ -9,42 +9,42 @@ export default function Highlights() {
       title: 'Strong Industry Connect & Collaboration',
       description:
         'The department maintains a robust industry ecosystem, connecting students with leading tech companies, startups, and R&D organizations. Through internships, live projects, expert talks, and mentorship, students gain real-world exposure, making them industry-ready and highly employable from day one.',
-      image: '/assets/cse-mtech-assets/Highlights/industry_connect.webp',
+      image: '/cse-mtech-assets/Highlights/industry_connect.webp',
     },
     {
       id: 2,
       title: 'Curriculum Highlights',
       description:
         'The M.Tech (CSE) curriculum is designed to deliver a perfect blend of strong fundamentals, emerging technologies, and real-world application. Students build expertise in core areas like Data Structures, DBMS, and Software Engineering, while advancing into AI, Machine Learning, Blockchain, and Quantum Computing.',
-      image: '/assets/cse-mtech-assets/Highlights/curriculum_highlights.webp',
+      image: '/cse-mtech-assets/Highlights/curriculum_highlights.webp',
     },
     {
       id: 3,
       title: 'Outstanding Placements',
       description:
         'Our graduates secure highly competitive roles at top multinational companies and promising startups. With dedicated placement cell support, rigorous interview preparation, and skill enhancement programs, we ensure a smooth transition from academics to successful professional careers.',
-      image: '/assets/cse-mtech-assets/Highlights/placement.webp',
+      image: '/cse-mtech-assets/Highlights/placement.webp',
     },
     {
       id: 4,
       title: 'Cutting-Edge Research',
       description:
         'Engage in groundbreaking research across specialized domains like AI, Data Science, and Cyber Security. We provide extensive support for publishing in reputed journals, participating in international conferences, and collaborating on government-funded and industry-sponsored projects.',
-      image: '/assets/cse-mtech-assets/Highlights/research.webp',
+      image: '/cse-mtech-assets/Highlights/research.webp',
     },
     {
       id: 5,
       title: 'State-of-the-art Infrastructure',
       description:
         'Experience learning in world-class facilities equipped with high-end computing laboratories, smart classrooms, and collaborative workspaces. Our advanced labs are powered by the latest software and hardware to support intensive computing tasks and complex project developments.',
-      image: '/assets/cse-mtech-assets/Highlights/infrastructure.webp',
+      image: '/cse-mtech-assets/Highlights/infrastructure.webp',
     },
     {
       id: 6,
       title: 'Best Results & Academic Excellence',
       description:
         'Our students consistently top university examinations and secure prestigious awards. This legacy of academic brilliance is driven by experienced faculty, continuous evaluations, and a learning environment that encourages analytical thinking and problem-solving.',
-      image: '/assets/cse-mtech-assets/Highlights/academic_excellence.webp',
+      image: '/cse-mtech-assets/Highlights/academic_excellence.webp',
     },
   ];
 
