@@ -12,7 +12,7 @@ export default function Clubs() {
       description:
         "The Google Developer Groups (GDG) at KIET, Ghaziabad is a dynamic, student-driven technical community dedicated to empowering learners through hands-on skills, innovation, and real-world problem-solving. Supported by Google Developers, the club provides a platform for students to explore emerging technologies such as web development, Android, cloud computing, machine learning, and AI. It conducts workshops, hackathons, coding sessions, and project-based learning activities to bridge the gap between academic knowledge and industry requirements. GDG KIET encourages collaboration, creativity, and leadership, helping students build strong technical portfolios while contributing to impactful community solutions and preparing them for future technological careers.",
       tags: ["Web", "Android", "Cloud"],
-      image: "/assets/cse-mtech-assets/clubs/gdg.webp",
+      image: "/cse-mtech-assets/clubs/gdg.webp",
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ export default function Clubs() {
       description:
         "The Data Science and Deep Learning (DSDL) Club, guided by Dr. Vineet Sharma, is a vibrant student community committed to fostering excellence in AI, machine learning, and data-driven innovation. The club provides a platform for students to explore data science concepts, build intelligent systems, and apply deep learning techniques to real-world problems. Through hands-on workshops, industrial collaborations, research initiatives, and peer learning, DSDL enhances analytical thinking and technical expertise. The club nurtures curiosity, creativity, and teamwork, empowering students to become future-ready professionals capable of contributing impactful solutions in academia, industry, and society.",
       tags: ["Machine Learning", "AI", "Deep Learning"],
-      image: "/assets/cse-mtech-assets/clubs/dsdl.webp",
+      image: "/cse-mtech-assets/clubs/dsdl.webp",
     },
     {
       id: 3,
@@ -28,14 +28,14 @@ export default function Clubs() {
       description:
         "Microsoft Learn Student Ambassadors (MLSA), KIET Ghaziabad is a student-led, innovation-focused community dedicated to building strong technical and leadership skills. Guided by experienced faculty and leadership, it offers hands-on learning through workshops, hackathons, mentorship programs, and expert sessions across domains like Cloud Computing, AI/ML, Web Development, Cybersecurity, and DevOps.Fostering collaboration, peer learning, and real-world exposure, MLSA KIET serves as a vibrant platform for innovation and prepares students to excel in the evolving tech industry.",
       tags: ["Azure", "Leadership", "Hackathons"],
-      image: "/assets/cse-mtech-assets/clubs/mlsa.webp",
+      image: "/cse-mtech-assets/clubs/mlsa.webp",
     },
     {
       id: 4,
       name: "FOSSCU (Open Source)",
       description: "FOSSCU (Free and Open Source Software Community), KIET Ghaziabad is a student-led initiative dedicated to promoting open-source culture, collaboration, and innovation. The community encourages students to contribute to real-world projects, enhance their coding skills, and understand the power of open technologies. Through workshops, contribution drives, and peer learning, FOSSCU empowers students to build, share, and grow while making meaningful contributions to the global open-source ecosystem",
       tags: ["Open Source", "Git", "Collaboration"],
-      image: "/assets/cse-mtech-assets/clubs/fosscu.webp",
+      image: "/cse-mtech-assets/clubs/fosscu.webp",
     },
   ];
 
@@ -48,6 +48,7 @@ export default function Clubs() {
             Clubs
           </h2>
           <div className="d-flex justify-content-center">
+            {/* Divider using Bootstrap border classes instead of fixed sizes */}
             <div className="rounded-pill" style={{ width: '6rem', height: '0.25rem', backgroundColor: '#F26520' }}></div>
           </div>
         </div>
@@ -68,8 +69,8 @@ export default function Clubs() {
                 <div key={club.id} className={`col-md-6 col-lg-3 d-flex flex-column position-relative ${isTop ? "mb-lg-5 pb-lg-5" : "mt-lg-5 pt-lg-5"}`}>
                   <div
                     onClick={() => setSelectedClub(club)}
-                    className="card border-0 shadow-sm rounded-4 cursor-pointer text-center club-card overflow-hidden"
-                    style={{ width: '100%', maxWidth: '250px', height: '240px', margin: '0 auto' }}
+                    className="card border-0 shadow-sm rounded-4 cursor-pointer text-center club-card overflow-hidden w-100 mx-auto"
+                    style={{ maxWidth: '250px', height: '240px' }}
                   >
                     {/* Image Box */}
                     <div className="position-relative w-100 d-flex align-items-center justify-content-center p-3 text-center bg-light flex-shrink-0" style={{ height: '110px' }}>
@@ -89,8 +90,7 @@ export default function Clubs() {
                       {/* Explore Button */}
                       <button
                         onClick={() => setSelectedClub(club)}
-                        className="club-explore-btn btn btn-outline-secondary w-100 mt-auto rounded-3 d-flex align-items-center justify-content-center gap-1"
-                        style={{ fontSize: '0.875rem', fontWeight: '600' }}
+                        className="club-explore-btn btn btn-outline-secondary w-100 mt-auto rounded-3 d-flex align-items-center justify-content-center gap-1 fs-6 fw-semibold"
                       >
                         Explore
                         <ChevronRight size={16} />
@@ -111,8 +111,7 @@ export default function Clubs() {
             <div className="modal-content border-0 shadow-lg rounded-4 overflow-hidden position-relative">
               <button
                 type="button"
-                className="btn-close position-absolute top-0 end-0 m-3 z-3 bg-white opacity-100 rounded-circle shadow-sm"
-                style={{ padding: '0.75rem' }}
+                className="btn-close position-absolute top-0 end-0 m-3 z-3 bg-white opacity-100 rounded-circle shadow-sm p-3"
                 onClick={() => setSelectedClub(null)}
                 aria-label="Close"
               ></button>
@@ -124,13 +123,13 @@ export default function Clubs() {
 
                 <div className="d-flex flex-wrap justify-content-center gap-2 mb-4">
                   {selectedClub.tags.map(tag => (
-                    <span key={tag} className="badge border fw-bold text-uppercase tracking-wider" style={{ backgroundColor: '#f8fafc', color: '#164265', borderColor: '#e2e8f0', letterSpacing: '0.05em' }}>
+                    <span key={tag} className="badge border fw-bold text-uppercase tracking-wider px-3 py-2" style={{ backgroundColor: '#f8fafc', color: '#164265', borderColor: '#e2e8f0', letterSpacing: '0.05em' }}>
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                <p className="text-secondary lh-lg mb-5 fs-6" style={{ maxWidth: '36rem' }}>
+                <p className="text-secondary lh-lg mb-5 fs-6 w-75 mx-auto text-wrap">
                   {selectedClub.description}
                 </p>
 

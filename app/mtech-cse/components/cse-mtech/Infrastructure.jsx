@@ -22,7 +22,7 @@ export default function Infrastructure() {
           <div className="row align-items-center g-4 g-lg-5">
             <div className="col-lg-6">
               <div className="infra-image-wrapper shadow-sm">
-                 <img src="/assets/cse-mtech-assets/Infrastructure/classes.webp" alt="Modern Classrooms" />
+                 <img src="/cse-mtech-assets/Infrastructure/classes.webp" alt="Modern Classrooms" />
               </div>
             </div>
             <div className="col-lg-6 d-flex flex-column justify-content-center">
@@ -49,7 +49,7 @@ export default function Infrastructure() {
           <div className="row flex-lg-row-reverse align-items-center g-4 g-lg-5 mt-3 mt-lg-5">
             <div className="col-lg-6">
               <div className="infra-image-wrapper shadow-sm">
-                 <img src="/assets/cse-mtech-assets/Infrastructure/labs.webp" alt="High-Tech Laboratories" />
+                 <img src="/cse-mtech-assets/Infrastructure/labs.webp" alt="High-Tech Laboratories" />
               </div>
             </div>
             <div className="col-lg-6 d-flex flex-column justify-content-center">

@@ -129,7 +129,7 @@ export default function Overview() {
             <div className="card border-0 shadow-sm text-center position-relative" style={{ width: '100%', maxWidth: '360px', backgroundColor: '#f8f9fa', borderRadius: '1rem' }}>
               <div className="card-body pt-5 px-3 d-flex justify-content-center align-items-end" style={{ height: '380px' }}>
                 <img
-                  src="/assets/cse-mtech-assets/images/Dr._Vineet_Sharma_4478-removebg-preview.png"
+                  src="/cse-mtech-assets/images/Dr._Vineet_Sharma_4478-removebg-preview.png"
                   alt="Dr. Vineet Kumar Sharma - Dean, CSE"
                   className="img-fluid w-100 h-100 object-fit-contain"
                   style={{ objectPosition: 'bottom' }}

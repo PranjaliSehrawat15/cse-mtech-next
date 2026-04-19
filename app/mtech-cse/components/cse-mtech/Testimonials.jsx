@@ -8,7 +8,7 @@ const TESTIMONIALS = [
     name: "Neha",
     role: "M.Tech Scholar",
     initials: "AK",
-    image: "/assets/cse-mtech-assets/Testimonials/Neha.webp",
+    image: "/cse-mtech-assets/Testimonials/Neha.webp",
     avatarBg: "#164265",
     message:
       "The M.Tech program at KIET provided me with comprehensive knowledge in AI and ML. The hands-on projects and industry mentorship were invaluable in my career growth.",
@@ -19,7 +19,7 @@ const TESTIMONIALS = [
     name: "Sakshi",
     role: "Data Scientist",
     initials: "PS",
-    image: "/assets/cse-mtech-assets/Testimonials/Sakshi.webp",
+    image: "/cse-mtech-assets/Testimonials/Sakshi.webp",
     avatarBg: "#1a5c8a",
     message:
       "KIET's DGX supercomputing center gave me access to cutting-edge technology. The faculty guidance and peer learning environment accelerated my professional development significantly.",
@@ -30,7 +30,7 @@ const TESTIMONIALS = [
     name: "Abhishek",
     role: "Assistant Professor",
     initials: "RP",
-    image: "/assets/cse-mtech-assets/Testimonials/Abhishek.webp",
+    image: "/cse-mtech-assets/Testimonials/Abhishek.webp",
     avatarBg: "#0f3d5c",
     message:
       "The research opportunities and collaboration with industry experts during the M.Tech program gave me a significant advantage. The faculty are genuinely committed educators.",
@@ -41,7 +41,7 @@ const TESTIMONIALS = [
     name: "Kajal Tyagi",
     role: "System and Function Developer",
     initials: "KT",
-    image: "/assets/cse-mtech-assets/Testimonials/Kajal_Tyagi.jpeg",
+    image: "/cse-mtech-assets/Testimonials/Kajal_Tyagi.jpeg",
     avatarBg: "#164265",
     message:
       "The M.Tech program at KIET equipped me with the right skills and practical exposure to excel in the AI/ML domain. The industry-oriented curriculum helped me land my dream role.",
@@ -52,7 +52,7 @@ const TESTIMONIALS = [
     name: "Nidhi",
     role: "Programmer Analyst (Cognizant)",
     initials: "N",
-    image: "/assets/cse-mtech-assets/Testimonials/Nidhi.png",
+    image: "/cse-mtech-assets/Testimonials/Nidhi.png",
     avatarBg: "#1a5c8a",
     message:
       "Studying at KIET gave me hands-on experience and excellent mentorship. The program's focus on real-world problem-solving was key to securing my position at Cognizant.",
@@ -63,7 +63,7 @@ const TESTIMONIALS = [
     name: "Shweta Singh",
     role: "M.Tech Scholar",
     initials: "SS",
-    image: "/assets/cse-mtech-assets/Testimonials/shweta.png",
+    image: "/cse-mtech-assets/Testimonials/shweta.png",
     avatarBg: "#9c6644",
     message:
       "My experience during the core technical coursework was amazing. The emphasis on practical research and problem solving made all the difference in my learning journey.",
@@ -74,7 +74,7 @@ const TESTIMONIALS = [
     name: "Vrinda Mishra",
     role: "IP Consultant (VisionLex)",
     initials: "VM",
-    image: "/assets/cse-mtech-assets/Testimonials/vrinda_mishra.png",
+    image: "/cse-mtech-assets/Testimonials/vrinda_mishra.png",
     avatarBg: "#606c38",
     message:
       "Choosing this program was the best decision for my career. The collaborative learning environment and advanced computing facilities were truly un-matched.",
